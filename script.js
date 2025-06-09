@@ -561,71 +561,71 @@ const gameData = {
             explanation: "The &lt;form&gt; tag is used to gather input from users, such as text, checkboxes, radio buttons, and then submit that data to a server using an action URL."
         },
         {
-    question: "What does &lt;input type='text'&gt; do in HTML?",
-    options: [
-        "It creates a password-protected field.",
-        "It creates a button to submit a form.",
-        "It creates a single-line text field for user input.",
-        "It creates a dropdown menu."
-    ],
-    correctAnswer: "It creates a single-line text field for user input.",
-    explanation: "The 'text' type is the default input type in HTML, used to enter plain, single-line text."
-},
-{
-    question: "What is the purpose of &lt;input type='password'&gt;?",
-    options: [
-        "To store session data.",
-        "To hide the input characters while typing.",
-        "To create clickable buttons.",
-        "To display encrypted messages."
-    ],
-    correctAnswer: "To hide the input characters while typing.",
-    explanation: "The 'password' input type masks characters with dots or asterisks to protect sensitive data."
-},
-{
-    question: "What does &lt;input type='email'&gt; do?",
-    options: [
-        "It creates a messaging form.",
-        "It validates that the user enters a properly formatted email address.",
-        "It encrypts the email entered.",
-        "It connects the form directly to email services."
-    ],
-    correctAnswer: "It validates that the user enters a properly formatted email address.",
-    explanation: "The 'email' input type helps ensure that users enter a value that matches email address format before submission."
-},
-{
-    question: "What is the function of &lt;input type='checkbox'&gt; in a form?",
-    options: [
-        "To let users pick one option from a group.",
-        "To add a signature field.",
-        "To allow users to select multiple options from a list.",
-        "To upload a file."
-    ],
-    correctAnswer: "To allow users to select multiple options from a list.",
-    explanation: "Checkboxes are used when you want the user to be able to choose zero or more options from a set."
-},
-{
-    question: "What does &lt;input type='submit'&gt; do in a form?",
-    options: [
-        "It resets all form fields.",
-        "It opens a new tab.",
-        "It sends the form data to the server.",
-        "It saves the data locally only."
-    ],
-    correctAnswer: "It sends the form data to the server.",
-    explanation: "The 'submit' input type creates a button that triggers the form's action, submitting the collected data."
-}
+            question: "What does &lt;input type='text'&gt; do in HTML?",
+            options: [
+                "It creates a password-protected field.",
+                "It creates a button to submit a form.",
+                "It creates a single-line text field for user input.",
+                "It creates a dropdown menu."
+            ],
+            correctAnswer: "It creates a single-line text field for user input.",
+            explanation: "The 'text' type is the default input type in HTML, used to enter plain, single-line text."
+        },
+        {
+            question: "What is the purpose of &lt;input type='password'&gt;?",
+            options: [
+                "To store session data.",
+                "To hide the input characters while typing.",
+                "To create clickable buttons.",
+                "To display encrypted messages."
+            ],
+            correctAnswer: "To hide the input characters while typing.",
+            explanation: "The 'password' input type masks characters with dots or asterisks to protect sensitive data."
+        },
+        {
+            question: "What does &lt;input type='email'&gt; do?",
+            options: [
+                "It creates a messaging form.",
+                "It validates that the user enters a properly formatted email address.",
+                "It encrypts the email entered.",
+                "It connects the form directly to email services."
+            ],
+            correctAnswer: "It validates that the user enters a properly formatted email address.",
+            explanation: "The 'email' input type helps ensure that users enter a value that matches email address format before submission."
+        },
+        {
+            question: "What is the function of &lt;input type='checkbox'&gt; in a form?",
+            options: [
+                "To let users pick one option from a group.",
+                "To add a signature field.",
+                "To allow users to select multiple options from a list.",
+                "To upload a file."
+            ],
+            correctAnswer: "To allow users to select multiple options from a list.",
+            explanation: "Checkboxes are used when you want the user to be able to choose zero or more options from a set."
+        },
+        {
+            question: "What does &lt;input type='submit'&gt; do in a form?",
+            options: [
+                "It resets all form fields.",
+                "It opens a new tab.",
+                "It sends the form data to the server.",
+                "It saves the data locally only."
+            ],
+            correctAnswer: "It sends the form data to the server.",
+            explanation: "The 'submit' input type creates a button that triggers the form's action, submitting the collected data."
+        }
+        
+        
+        
+        
+        
+        
 
 
 
 
-
-
-
-
-
-
-    ],
+        ],
 
     };
 
