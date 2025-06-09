@@ -304,8 +304,330 @@ const gameData = {
             correctAnswer: "both include and require",
             explanation: "Both `include` and `require` statements are used to embed the content of another PHP file into the current file. `require` will produce a fatal error if the file is not found, while `include` will only produce a warning."
         }
-    ]
-};
+    ],
+   qnahtml: [
+        {
+            question: "What is HTML?",
+            options: [
+                "A programming language used to build mobile apps.",
+                "HTML stands for HyperText Markup Language. It's the standard language used to create and structure content on the web.",
+                "A styling language used for making web pages look attractive.",
+                "A database query language used for fetching web data."
+            ],
+            correctAnswer: "HTML stands for HyperText Markup Language. It's the standard language used to create and structure content on the web.",
+            explanation: "HTML is not a programming or styling language—it's a markup language that defines the structure of web content. It works with CSS and JavaScript to build modern websites."
+        },
+        {
+            question: "What are common tags in HTML?",
+            options: [
+                "&lt;h1&gt; to &lt;h6&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;",
+                "&lt;run&gt;, &lt;print&gt;, &lt;main&gt;, &lt;loop&gt;",
+                "&lt;define&gt;, &lt;module&gt;, &lt;class&gt;, &lt;import&gt;",
+                "&lt;move&gt;, &lt;draw&gt;, &lt;box&gt;, &lt;line&gt;"
+            ],
+            correctAnswer: "&lt;h1&gt; to &lt;h6&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;",
+            explanation: "Common HTML tags include &lt;h1&gt; for headings, &lt;p&gt; for paragraphs, &lt;a&gt; for links, and &lt;img&gt; for images. The other choices contain tags from programming or graphics contexts, not HTML."
+        },
+        {
+            question: "How are the &lt;h1&gt; to &lt;h6&gt; tags used in HTML?",
+            options: [
+                "They are used to style buttons with hover effects.",
+                "They define heading levels, from the largest (&lt;h1&gt;) to the smallest (&lt;h6&gt;).",
+                "They control page layout and grid alignment.",
+                "They are used to create hyperlinks."
+            ],
+            correctAnswer: "They define heading levels, from the largest (&lt;h1&gt;) to the smallest (&lt;h6&gt;).",
+            explanation: "The &lt;h1&gt; to &lt;h6&gt; tags are used for headings, with &lt;h1&gt; being the most important and largest, and &lt;h6&gt; being the least important and smallest. They help define the structure of content."
+        },
+        {
+            question: "What is the difference between &lt;ul&gt; and &lt;ol&gt; in HTML?",
+            options: [
+                "&lt;ul&gt; creates an ordered list, while &lt;ol&gt; creates an unordered list.",
+                "&lt;ul&gt; is used for headings, while &lt;ol&gt; is used for links.",
+                "&lt;ul&gt; creates an unordered list, while &lt;ol&gt; creates an ordered (numbered) list.",
+                "&lt;ul&gt; displays images, while &lt;ol&gt; embeds videos."
+            ],
+            correctAnswer: "&lt;ul&gt; creates an unordered list, while &lt;ol&gt; creates an ordered (numbered) list.",
+            explanation: "&lt;ul&gt; stands for unordered list (bullets), and &lt;ol&gt; stands for ordered list (numbers). Both use &lt;li&gt; for list items."
+        },
+        {
+            question: "How do you create a hyperlink in HTML?",
+            options: [
+                "Using the &lt;link&gt; tag with an href attribute.",
+                "Using the &lt;a&gt; tag with an href attribute pointing to the URL.",
+                "Using the &lt;url&gt; tag with a src attribute.",
+                "Using the &lt;src&gt; tag inside a paragraph."
+            ],
+            correctAnswer: "Using the &lt;a&gt; tag with an href attribute pointing to the URL.",
+            explanation: "The &lt;a&gt; (anchor) tag creates hyperlinks. The href attribute defines the destination URL."
+        },
+        {
+            question: "What is the &lt;head&gt; tag used for in HTML?",
+            options: [
+                "It displays content directly on the web page.",
+                "It is used to store the main body text and headings.",
+                "It contains metadata, such as the page title, links to CSS, and scripts.",
+                "It holds images and videos for the homepage."
+            ],
+            correctAnswer: "It contains metadata, such as the page title, links to CSS, and scripts.",
+            explanation: "The &lt;head&gt; tag includes metadata that isn’t visible on the page, such as the title, character encoding, linked stylesheets, and JavaScript files."
+        },
+        {
+            question: "What is the difference between &lt;div&gt; and &lt;span&gt; in HTML?",
+            options: [
+                "&lt;div&gt; is used for small inline elements, while &lt;span&gt; is used for large block elements.",
+                "&lt;div&gt; and &lt;span&gt; are both used for links.",
+                "&lt;div&gt; is a block-level element, and &lt;span&gt; is an inline-level element.",
+                "&lt;div&gt; automatically adds styling, while &lt;span&gt; does not."
+            ],
+            correctAnswer: "&lt;div&gt; is a block-level element, and &lt;span&gt; is an inline-level element.",
+            explanation: "&lt;div&gt; is a block-level element, which means it starts on a new line and takes up the full width of its parent container by default. &lt;span&gt; is an inline-level element, so it only takes up as much width as its content requires and does not break to a new line. Both are commonly used for grouping elements for styling with CSS."
+
+        },
+        {
+            question: "What happens when you place two &lt;div&gt; elements next to each other in HTML?",
+            options: [
+                "They appear on the same line side-by-side by default.",
+                "They stack vertically because &lt;div&gt; is a block-level element.",
+                "They become inline unless styled with CSS.",
+                "They collapse into one element."
+            ],
+            correctAnswer: "They stack vertically because &lt;div&gt; is a block-level element.",
+            explanation: "By default, &lt;div&gt; elements are block-level, so they start on a new line and stack vertically."
+        },
+        {
+            question: "Which of the following is TRUE about &lt;span&gt; in HTML?",
+            options: [
+                "It creates a new block of content.",
+                "It stretches to fill the entire width of its container.",
+                "It is an inline element used for styling parts of text.",
+                "It is used to create line breaks."
+            ],
+            correctAnswer: "It is an inline element used for styling parts of text.",
+            explanation: "&lt;span&gt; is used to apply styles or scripts to small portions of text without breaking the flow of content."
+        },
+        {
+            question: "How can you make a &lt;span&gt; behave like a block element?",
+            options: [
+                "Add display: block; in CSS.",
+                "Use a &lt;div&gt; instead.",
+                "Wrap it in a &lt;p&gt; tag.",
+                "It's not possible to change span behavior."
+            ],
+            correctAnswer: "Add display: block; in CSS.",
+            explanation: "You can change the default display of any HTML element using CSS. Setting display: block; makes a &lt;span&gt; behave like a block."
+        },
+        {
+            question: "What is a key visual difference between block and inline elements?",
+            options: [
+                "Inline elements always have borders by default.",
+                "Block elements are hidden unless styled.",
+                "Block elements break onto a new line; inline elements do not.",
+                "Inline elements can contain block elements inside them."
+            ],
+            correctAnswer: "Block elements break onto a new line; inline elements do not.",
+            explanation: "Block-level elements take up full width and begin on a new line. Inline elements stay in the same line with surrounding content."
+        },
+        {
+            question: "What is a list tag in HTML?",
+            options: [
+                "A tag used to create buttons on a page.",
+                "A tag used to define JavaScript functions.",
+                "Tags like &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; used to create lists.",
+                "Tags for linking external files."
+            ],
+            correctAnswer: "Tags like &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; used to create lists.",
+            explanation: "HTML provides &lt;ul&gt; (unordered list), &lt;ol&gt; (ordered list), and &lt;li&gt; (list item) to create different types of lists."
+        },
+        {
+            question: "How do you embed an image in HTML?",
+            options: [
+                "Using the &lt;image&gt; tag with a source attribute.",
+                "Using the &lt;img&gt; tag with the src attribute.",
+                "Using the &lt;src&gt; tag inside a &lt;div&gt;.",
+                "Using CSS only."
+            ],
+            correctAnswer: "Using the &lt;img&gt; tag with the src attribute.",
+            explanation: "The &lt;img&gt; tag is used to display images. The src attribute specifies the image URL."
+        },
+        {
+            question: "What is the purpose of the alt attribute in an image tag?",
+            options: [
+                "To style the image with alternative colors.",
+                "To define the size of the image.",
+                "To provide alternative text if the image cannot load.",
+                "To create animations for the image."
+            ],
+            correctAnswer: "To provide alternative text if the image cannot load.",
+            explanation: "The alt attribute helps screen readers and is displayed if the image fails to load, improving accessibility."
+        },
+        {
+            question: "When do we use action and method in HTML?",
+            options: [
+                "They are used in JavaScript loops.",
+                "Inside the &lt;img&gt; tag to control image size.",
+                "In the &lt;form&gt; tag to define how and where to send form data.",
+                "To create animations in HTML."
+            ],
+            correctAnswer: "In the &lt;form&gt; tag to define how and where to send form data.",
+            explanation: "The action attribute defines the URL where the form data is sent, and method (GET or POST) specifies how it's sent."
+        },
+        {
+            question: "What is a hyperlink in HTML?",
+            options: [
+                "A clickable link created using the &lt;a&gt; tag with an href attribute.",
+                "A tool to run scripts on a page.",
+                "A visual layout element.",
+                "A tag to create an image slider."
+            ],
+            correctAnswer: "A clickable link created using the &lt;a&gt; tag with an href attribute.",
+            explanation: "The &lt;a&gt; tag (anchor tag) creates hyperlinks, allowing users to navigate to other pages or resources."
+        },
+        {
+            question: "Why do we use values like target='_blank', '_self', '_top', and '_parent' in HTML?",
+            options: [
+                "To set how the page should be styled using CSS.",
+                "To define the structure of a web form.",
+                "To control where a link or form result is opened (e.g., same tab, new tab, parent frame).",
+                "To validate user input in forms."
+            ],
+            correctAnswer: "To control where a link or form result is opened (e.g., same tab, new tab, parent frame).",
+            explanation: "The target attribute specifies where to open the linked document. For example, '_blank' opens in a new tab, while '_self' opens in the same tab."
+        },
+        {
+            question: "What does target='_blank' do in an HTML link?",
+            options: [
+                "Opens the link in the same tab or window.",
+                "Opens the link in a new tab or window.",
+                "Opens the link in a popup alert.",
+                "Redirects to a new website silently."
+            ],
+            correctAnswer: "Opens the link in a new tab or window.",
+            explanation: "target='_blank' is used to open the link in a new browser tab or window."
+        },
+        {
+            question: "What is the effect of using target='_self' in an HTML link?",
+            options: [
+                "Opens the link in a popup.",
+                "Opens the link in the same tab or window.",
+                "Opens the link in a new tab.",
+                "Blocks the link from opening."
+            ],
+            correctAnswer: "Opens the link in the same tab or window.",
+            explanation: "target='_self' is the default behavior — it loads the linked document in the same browsing context."
+        },
+        {
+            question: "What does target='_parent' do when used in a link or form?",
+            options: [
+                "It opens the link in a popup window.",
+                "It opens the link in a new browser tab.",
+                "It opens the link in the parent frame, if the page is inside a frame.",
+                "It refreshes the current frame only."
+            ],
+            correctAnswer: "It opens the link in the parent frame, if the page is inside a frame.",
+            explanation: "target='_parent' opens the linked document in the immediate parent frame — useful when working with nested iframes."
+        },
+        {
+            question: "What is the purpose of target='_top' in HTML?",
+            options: [
+                "To open a link in the current inline element.",
+                "To close all tabs and open a new one.",
+                "To open the link in the top-level window, removing any frames.",
+                "To prevent the page from refreshing."
+            ],
+            correctAnswer: "To open the link in the top-level window, removing any frames.",
+            explanation: "target='_top' breaks out of all frames and loads the link in the full browser window — useful for exiting iframes."
+        },
+        {
+            question: "Which of the following are valid input types in HTML?",
+            options: [
+                "text, password, email, checkbox, submit",
+                "inputText, secureText, mail, check, go",
+                "textbox, passwordBox, inputField, send, choose",
+                "string, numberString, checkfield, click, type"
+            ],
+            correctAnswer: "text, password, email, checkbox, submit",
+            explanation: "HTML supports various input types like 'text', 'password', 'email', 'checkbox', and 'submit', which define how the input field behaves and what data it collects."
+        },
+        {
+            question: "What is the purpose of a &lt;form&gt; in HTML?",
+            options: [
+                "To style a webpage with CSS.",
+                "To define scripts in a webpage.",
+                "To collect user input and send it to a server.",
+                "To display images and videos responsively."
+            ],
+            correctAnswer: "To collect user input and send it to a server.",
+            explanation: "The &lt;form&gt; tag is used to gather input from users, such as text, checkboxes, radio buttons, and then submit that data to a server using an action URL."
+        },
+        {
+            question: "What does &lt;input type='text'&gt; do in HTML?",
+            options: [
+                "It creates a password-protected field.",
+                "It creates a button to submit a form.",
+                "It creates a single-line text field for user input.",
+                "It creates a dropdown menu."
+            ],
+            correctAnswer: "It creates a single-line text field for user input.",
+            explanation: "The 'text' type is the default input type in HTML, used to enter plain, single-line text."
+        },
+        {
+            question: "What is the purpose of &lt;input type='password'&gt;?",
+            options: [
+                "To store session data.",
+                "To hide the input characters while typing.",
+                "To create clickable buttons.",
+                "To display encrypted messages."
+            ],
+            correctAnswer: "To hide the input characters while typing.",
+            explanation: "The 'password' input type masks characters with dots or asterisks to protect sensitive data."
+        },
+        {
+            question: "What does &lt;input type='email'&gt; do?",
+            options: [
+                "It creates a messaging form.",
+                "It validates that the user enters a properly formatted email address.",
+                "It encrypts the email entered.",
+                "It connects the form directly to email services."
+            ],
+            correctAnswer: "It validates that the user enters a properly formatted email address.",
+            explanation: "The 'email' input type helps ensure that users enter a value that matches email address format before submission."
+        },
+        {
+            question: "What is the function of &lt;input type='checkbox'&gt; in a form?",
+            options: [
+                "To let users pick one option from a group.",
+                "To add a signature field.",
+                "To allow users to select multiple options from a list.",
+                "To upload a file."
+            ],
+            correctAnswer: "To allow users to select multiple options from a list.",
+            explanation: "Checkboxes are used when you want the user to be able to choose zero or more options from a set."
+        },
+        {
+            question: "What does &lt;input type='submit'&gt; do in a form?",
+            options: [
+                "It resets all form fields.",
+                "It opens a new tab.",
+                "It sends the form data to the server.",
+                "It saves the data locally only."
+            ],
+            correctAnswer: "It sends the form data to the server.",
+            explanation: "The 'submit' input type creates a button that triggers the form's action, submitting the collected data."
+        }
+
+
+
+
+
+
+
+
+
+
+    ],
+
+    };
 
 // Game State Management
 const gameState = {
@@ -1032,7 +1354,7 @@ function renderQnAGame() {
         return;
     }
     const currentQuestion = gameState.currentPool[gameState.currentIndex];
-
+//////////==================================
     elements.gameArea.innerHTML = `
         <div class="container">
             <h2 class="text-center">Q&A: ${gameState.mode.substring(3).toUpperCase()}</h2>
