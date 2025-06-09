@@ -310,7 +310,7 @@ const gameData = {
             question: "What is HTML?",
             options: [
                 "A programming language used to build mobile apps.",
-                "HTML stands for HyperText Markup Language. It's the standard language used to create and structure content on the web.",
+                 "HTML stands for HyperText Markup Language. It's the standard language used to create and structure content on the web.",
                 "A styling language used for making web pages look attractive.",
                 "A database query language used for fetching web data."
             ],
