@@ -2,146 +2,171 @@
 
 // Game Data - Moved to separate object for better organization
 const gameData = {
-    vocab: [
-        { word: "unordered list", meaning: "creates an unordered list (stands for unordered list (bullets))", khmer: "", audio: "audio/unordered list.mp3" },
-        { word: "ordered (numbered) list", meaning: "creates an ordered (numbered) list(stands for ordered list (numbers))", khmer: "", audio: "audio/ordered (numbered) list.mp3" },
-        { word: "behave like", meaning: "to act or behave like someone or something.", khmer: "ប្រព្រឹត្តដូចជា", audio: "audio/.mp3" },
-        { word: "Block-level elements", meaning: "Block-level elements take up full width and begin on a new line. ", khmer: "", audio: "audio/Block-level elements.mp3" },
-        { word: "Inline elements", meaning: "Inline elements stay in the same line with surrounding content.", khmer: "", audio: "audio/Inline elements.mp3" },
-        { word: "default", meaning: "as the original or initial setting that is automatically selected when no other choice is made", khmer: "លំនាំដើម", audio: "audio/default.mp3" },
-       
-      { word: "Default (preset setting)<br>✅ Example: This app uses the default language.<br>→ កម្មវិធីនេះប្រើភាសាលំនាំដើម។", meaning: "Used in computers or technology to mean the preset or automatic setting.", khmer: "ឧបករណ៍លំនាំដើម", audio: "audio/Default (preset setting).mp3" },
-      { word: "Default (failure to act, e.g., fail to pay a loan)✅ Example:<br>He was in default on his loan.<br>→ គាត់បានខកខានក្នុងការសងប្រាក់កម្ចី។", meaning: "Means to fail to do something required, like repaying a loan or appearing in court.", khmer: "", audio: "audio/Default (failure to act, e.g., fail to pay a loan).mp3" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    // { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    // { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
-    //     { word: "", meaning: "", khmer: "", audio: "" },
+    vocab:    [
+        
+        
+          { 
+            word: "unordered list", 
+            meaning: "Creates a list with bullet points, without order.", 
+            khmer: "បញ្ជីដែលគ្មានលំដាប់ (បញ្ចូលជាចំណុច)", 
+            audio: "audio/unordered list.mp3" 
+          },
+          { 
+            word: "ordered (numbered) list", 
+            meaning: "Creates a list with numbers or letters in a specific order.", 
+            khmer: "បញ្ជីដែលមានលំដាប់ (ជាលេខឬអក្សរ)", 
+            audio: "audio/ordered (numbered) list.mp3" 
+          },
+          { 
+            word: "behave like", 
+            meaning: "To act or function in a similar way to someone or something.", 
+            khmer: "ប្រព្រឹត្តដូចជា", 
+            audio: "audio/.mp3" 
+          },
+          { 
+            word: "Block-level elements", 
+            meaning: "HTML elements that start on a new line and take up full width.", 
+            khmer: "ធាតុកម្រិតប្លុក (ចាប់ផ្តើមបន្ទាត់ថ្មី និងយកទទឹងទាំងមូល)", 
+            audio: "audio/Block-level elements.mp3" 
+          },
+          { 
+            word: "Inline elements", 
+            meaning: "HTML elements that stay in the same line with surrounding content.", 
+            khmer: "ធាតុជួរដេក (នៅជាមួយខ្លឹមសាររង)", 
+            audio: "audio/Inline elements.mp3" 
+          },
+          { 
+            word: "default", 
+            meaning: "The original or automatic setting when no other is selected.", 
+            khmer: "លំនាំដើម", 
+            audio: "audio/default.mp3" 
+          },
+          { 
+            word: "Default (preset setting)<br>✅ Example: This app uses the default language.<br>→ កម្មវិធីនេះប្រើភាសាលំនាំដើម។", 
+            meaning: "Used in computers to mean the pre-selected or automatic setting.", 
+            khmer: "ការកំណត់ស្វ័យប្រវត្តិ", 
+            audio: "audio/Default (preset setting).mp3" 
+          },
+          { 
+            word: "Default (failure to act, e.g., fail to pay a loan)<br>✅ Example: He was in default on his loan.<br>→ គាត់បានខកខានក្នុងការសងប្រាក់កម្ចី។", 
+            meaning: "Failing to meet a responsibility, such as repaying a loan or appearing in court.", 
+            khmer: "ការខកខានក្នុងការធ្វើនូវអ្វីមួយ", 
+            audio: "audio/Default (failure to act, e.g., fail to pay a loan).mp3" 
+          },
+          
+        
+          {
+            "word": "element",
+            "meaning": "A building block of an HTML document, such as <p>, <div>, or <img>.",
+            "khmer": "ធាតុមូលដ្ឋានក្នុងឯកសារ HTML",
+            "audio": "audio/element.mp3"
+          },
+          {
+            "word": "attribute",
+            "meaning": "Provides additional information about an element, usually in the form of key-value pairs.",
+            "khmer": "គុណលក្ខណៈសម្រាប់ធាតុ (ជាចំណុចបន្ថែម)",
+            "audio": "audio/attribute.mp3"
+          },
+          {
+            "word": "tag",
+            "meaning": "Used to define an HTML element, such as <h1> or <a>.",
+            "khmer": "ស្លាកប្រើសម្រាប់កំណត់ធាតុ HTML",
+            "audio": "audio/tag.mp3"
+          },
+          {
+            "word": "nested elements",
+            "meaning": "Elements placed inside other elements.",
+            "khmer": "ធាតុដែលដាក់នៅខាងក្នុងធាតុផ្សេងទៀត",
+            "audio": "audio/nested elements.mp3"
+          },
+          {
+            "word": "doctype",
+            "meaning": "Declaration that defines the version of HTML used in the document.",
+            "khmer": "ការបញ្ជាក់ពីប្រភេទឯកសារ HTML",
+            "audio": "audio/doctype.mp3"
+          },
+          {
+            "word": "self-closing tag",
+            "meaning": "A tag that doesn’t need a closing tag, like <img> or <br>.",
+            "khmer": "ស្លាកដែលមិនចាំបាច់មានការបិទ",
+            "audio": "audio/self-closing tag.mp3"
+          },
+          {
+            "word": "semantic tag",
+            "meaning": "Tags that describe the meaning of the content, like <article>, <footer>, or <section>.",
+            "khmer": "ស្លាកដែលមានអត្ថន័យច្បាស់លាស់",
+            "audio": "audio/semantic tag.mp3"
+          },
+          {
+            "word": "hyperlink",
+            "meaning": "A link that connects one web page to another using the <a> tag.",
+            "khmer": "តំណភ្ជាប់គេហទំព័រ",
+            "audio": "audio/hyperlink.mp3"
+          },
+          {
+            "word": "form",
+            "meaning": "Used to collect user input, such as text, checkboxes, and buttons.",
+            "khmer": "សំណុំបែបបទសម្រាប់ទទួលពត៌មានពីអ្នកប្រើ",
+            "audio": "audio/form.mp3"
+          },
+          {
+            "word": "input",
+            "meaning": "An element inside a form used to accept data from the user.",
+            "khmer": "វាលបញ្ចូលព័ត៌មាន",
+            "audio": "audio/input.mp3"
+          },
+                
+          {
+            word: "border",
+            meaning: "The outer edge or boundary of an element.",
+            khmer: "ស៊ុម",
+            audio: "audio/border.mp3"  // Suggest recording with “border” pronunciation
+          },
+          {
+            word: "appears",
+            meaning: "Becomes visible or can be seen.",
+            khmer: "បង្ហាញ",
+            audio: "audio/appears.mp3"  // Suggest TTS: “uh-PEERS”
+          },
+          {
+            word: "caption",
+            meaning: "A short title or explanation for an image, table, or figure.",
+            khmer: "ចំណងជើងពន្យល់",
+            audio: "audio/caption.mp3"  // TTS: “KAP-shun”
+          },
+          {
+            word: "form",
+            meaning: "An HTML element used to collect user input.",
+            khmer: "សំណុំបែបបទ",
+            audio: "audio/form.mp3"  // TTS: “form”
+          },
+          {
+            word: "improves",
+            meaning: "Makes something better or more effective.",
+            khmer: "ធ្វើឲ្យប្រសើរឡើង",
+            audio: "audio/improves.mp3"  // TTS: “im-PROOVZ”
+          },
+          {
+            word: "organization",
+            meaning: "The structure or arrangement of things.",
+            khmer: "ការរៀបចំ",
+            audio: "audio/organization.mp3"  // TTS: "or-guh-ni-ZAY-shun"
+          },
+          {
+            word: "accessibility",
+            meaning: "The ability for people (especially with disabilities) to access content or services.",
+            khmer: "ភាពងាយស្រួលក្នុងការចូលប្រើ",
+            audio: "audio/accessibility.mp3"  // Cambridge Dictionary pronunciation :contentReference[oaicite:1]{index=1}
+          },
+        
+
+
+
     // 
+
+
+
+        
     ],
     
     grammar: {
@@ -247,7 +272,31 @@ const gameData = {
             { sentence: "Block-level elements are elements that occupy the full width of their container and always start on a new line in the document.", khmer: "" },
             { sentence: "Inline elements are elements that do not start on a new line and only take up as much width as necessary. They flow alongside other inline elements within the same block-level parent. ", khmer: "" },                       
             { sentence: "&lt;div&gt; is a block-level element, which means it starts on a new line and takes up the full width of its parent container by default. &lt;span&gt; is an inline-level element, so it only takes up as much width as its content requires and does not break to a new line. Both are commonly used for grouping elements for styling with CSS.", khmer: "" },
-            { sentence: "What happens when you place two &lt;div&gt; elements next to each other in HTML?", khmer: "They stack vertically because &lt;div&gt; is a block-level element." }
+            { sentence: "Images are embedded using the &lt;img&gt; tag. The src attribute defines the path to the image file, and alt provides alternative text. ", khmer: "Using the &lt;img&gt; tag with a src attribute pointing to the image URL." },
+            { sentence: " The 'action' attribute defines the server URL where form data should be sent. The 'method' attribute specifies how to send the data — commonly using 'GET' or 'POST'.", khmer: "To specify where and how to send the form data when submitted." },                         
+            { sentence: "🔗target=_blank (Opens the link in a new tab or window.):✅ You want the user to open a link without leaving your site. ", khmer: "🔍Keeps your website open in the user's tab<br>🔍 Common for external links." },
+            { sentence: "🔗target=_self :(Opens the link in the same tab (this is the default)).✅ You’re linking to another page within your site and don’t want to open a new tab", khmer: "🔍Keeps the browsing flow smooth.<br>🔍Ideal for internal navigation." },
+            { sentence: "🔗target=_top: (Opens the link in the full body of the window, replacing any nested frames). ✅You're using frames (very rare now) or an embedded environment like an iframe, and want to break out and load in the main window.", khmer: "🔍Useful in iframes when you want to escape the frame and load the page in the top-level browser window." }, 
+            { sentence: "🔗target=_parent (Opens the link in the immediate parent frame of the current one.) ✅You are inside a nested frame and want the link to open in the direct parent of that frame.", khmer: "🔍Rarely used, mostly in legacy frame-based layouts." },
+            { sentence: "🔗 _blank	✅Open in 🔍New tab/window 	✅Common use case🔍 External links", khmer: "" },
+            { sentence: "🔗_self	✅Open in🔍Same tab (default)	✅Common use case🔍Internal page navigation ", khmer: "" },
+            { sentence: "🔗_top	✅Open in 🔍Top-most frame	✅Common use case🔍Escape iframe/frame to full window", khmer: "" },
+            { sentence: "🔗_parent	✅Open in 🔍Immediate parent frame	✅Common use case🔍Open link in direct parent frame ", khmer: "" },
+            { sentence: "🧱 A form in HTML is used to collect user input and send it to a server for processing (like logging in, signing up, or submitting a comment). ", khmer: "" },
+            { sentence: "🧱Key Form Components: Tag form Purpose Wraps the entire form; defines where data goes (action) and how (method). ", khmer: "" },
+            { sentence: "🧱Key Form Components: Tag input PurposeAccepts text, passwords, checkboxes, emails, etc. ", khmer: "" },
+            { sentence: "🧱 Key Form Components Tag label	Purpose Describes each input ( ", khmer: "" }, 
+            { sentence: "Name at least 5 types of type input fields: text, password, email, checkbox, submit ", khmer: " &lt;input type='text'&gt;,  &lt;input type='password'&gt;,  &lt;input type='email'&gt;,  &lt;input type='checkbox'&gt;,  &lt;input type='submit'&gt;,  &lt;input type='number'&gt;,  &lt;input type='date'&gt;, " },
+            { sentence: " The <fieldset> and <legend> elements in HTML are used to group related form elements together in a structured and accessible way.", khmer: "" },
+            { sentence: "✅  &lt;fieldset&gt; tag is used to group form controls(like input, selects, etc.) into a section. ", khmer: "Visually(Visual Clarity: Groups related inputs under a common title.) adds a box (border) around grouped elements.<br>Improves form organization(Structure: Helps organize long or complex forms.) and accessibility(Screen readers recognize field groups.)" },
+            { sentence: "✅  &lt;legend&gt; tag defines a caption or title for the  &lt;fieldset&gt;. It usually appears at the top of the fieldset border.", khmer: "" },
+            { sentence: "✅  &lt;section&gt represents a standalone block of content with a specific topic or purpose, and it typically has a heading.", khmer: "" }, 
+            { sentence: " The &lt;section&gt; tag adds meaning (semantics) to your HTML by representing a defined block of content. &lt;div&gt; is purely structural with no implied meaning, used mainly for styling or grouping.", khmer: "What is the difference between &lt;section&gt; and &lt;div&gt; in HTML?" },
+            { sentence: " &lt;section&gt; is semantic and indicates a block of related content, while &lt;div&gt; is a generic container with no meaning", khmer: "What is the difference between &lt;section&gt; and &lt;div&gt; in HTML?" },
+            { sentence: "The &lt;section&gt; tag represents a standalone section of content, usually with its own heading, such as a chapter, tab, or part of a page. ", khmer: "What is the &lt;section&gt; tag used for in HTML?" },
+            { sentence: "To define standalone blocks of content with a specific theme or purpose. ", khmer: "What is the &lt;section&gt; tag used for in HTML?" },
+            
+            { sentence: "What happens when you place two &lt;div&gt; elements next to each other in HTML?", khmer: "They stack vertically because &lt;div&gt; is a block-level element." },
         ],
         "Intermediate Sentences": [
             { sentence: "I love learning English. It's so rewarding!", khmer: "ខ្ញុំស្រលាញ់ការសិក្សាភាសាអង់គ្លេស។ វាពិតជាមានប្រយោជន៍ណាស់!" },
@@ -731,53 +780,110 @@ const gameData = {
         "It creates a single-line text field for user input.",
         "It creates a dropdown menu."
     ],
-    correctAnswer: "It creates a single-line text field for user input.",
-    explanation: "The 'text' type is the default input type in HTML, used to enter plain, single-line text."
-},
-{
-    question: "What is the purpose of &lt;input type='password'&gt;?",
+        correctAnswer: "It creates a single-line text field for user input.",
+        explanation: "The 'text' type is the default input type in HTML, used to enter plain, single-line text."
+    },
+    {
+        question: "What is the purpose of &lt;input type='password'&gt;?",
+        options: [
+            "To store session data.",
+            "To hide the input characters while typing.",
+            "To create clickable buttons.",
+            "To display encrypted messages."
+        ],
+        correctAnswer: "To hide the input characters while typing.",
+        explanation: "The 'password' input type masks characters with dots or asterisks to protect sensitive data."
+    },
+    {
+        question: "What does &lt;input type='email'&gt; do?",
+        options: [
+            "It creates a messaging form.",
+            "It validates that the user enters a properly formatted email address.",
+            "It encrypts the email entered.",
+            "It connects the form directly to email services."
+        ],
+        correctAnswer: "It validates that the user enters a properly formatted email address.",
+        explanation: "The 'email' input type helps ensure that users enter a value that matches email address format before submission."
+    },
+    {
+        question: "What is the function of &lt;input type='checkbox'&gt; in a form?",
+        options: [
+            "To let users pick one option from a group.",
+            "To add a signature field.",
+            "To allow users to select multiple options from a list.",
+            "To upload a file."
+        ],
+        correctAnswer: "To allow users to select multiple options from a list.",
+        explanation: "Checkboxes are used when you want the user to be able to choose zero or more options from a set."
+    },
+    {
+        question: "What does &lt;input type='submit'&gt; do in a form?",
+        options: [
+            "It resets all form fields.",
+            "It opens a new tab.",
+            "It sends the form data to the server.",
+            "It saves the data locally only."
+        ],
+        correctAnswer: "It sends the form data to the server.",
+        explanation: "The 'submit' input type creates a button that triggers the form's action, submitting the collected data."
+    },
+     {
+    question: "How do you embed an image in an HTML page?",
     options: [
-        "To store session data.",
-        "To hide the input characters while typing.",
-        "To create clickable buttons.",
-        "To display encrypted messages."
+        "Using the &lt;img&gt; tag with a src attribute pointing to the image URL.",
+        "Using the &lt;image&gt; tag inside a &lt;form&gt;.",
+        "By linking to the image with the &lt;a&gt; tag.",
+        "By inserting the image directly into the &lt;head&gt; section."
     ],
-    correctAnswer: "To hide the input characters while typing.",
-    explanation: "The 'password' input type masks characters with dots or asterisks to protect sensitive data."
-},
-{
-    question: "What does &lt;input type='email'&gt; do?",
-    options: [
-        "It creates a messaging form.",
-        "It validates that the user enters a properly formatted email address.",
-        "It encrypts the email entered.",
-        "It connects the form directly to email services."
-    ],
-    correctAnswer: "It validates that the user enters a properly formatted email address.",
-    explanation: "The 'email' input type helps ensure that users enter a value that matches email address format before submission."
-},
-{
-    question: "What is the function of &lt;input type='checkbox'&gt; in a form?",
-    options: [
-        "To let users pick one option from a group.",
-        "To add a signature field.",
-        "To allow users to select multiple options from a list.",
-        "To upload a file."
-    ],
-    correctAnswer: "To allow users to select multiple options from a list.",
-    explanation: "Checkboxes are used when you want the user to be able to choose zero or more options from a set."
-},
-{
-    question: "What does &lt;input type='submit'&gt; do in a form?",
-    options: [
-        "It resets all form fields.",
-        "It opens a new tab.",
-        "It sends the form data to the server.",
-        "It saves the data locally only."
-    ],
-    correctAnswer: "It sends the form data to the server.",
-    explanation: "The 'submit' input type creates a button that triggers the form's action, submitting the collected data."
-}
+        correctAnswer: "Using the &lt;img&gt; tag with a src attribute pointing to the image URL.",
+        explanation: "Images are embedded using the &lt;img&gt; tag. The src attribute defines the path to the image file, and alt provides alternative text."
+    },
+    {
+        question: "When do we use the 'action' and 'method' attributes in an HTML form?",
+        options: [
+            "To apply CSS styles to the form layout.",
+            "To connect the form with a database directly.",
+            "To specify where and how to send the form data when submitted.",
+            "To create hidden inputs in the form."
+        ],
+        correctAnswer: "To specify where and how to send the form data when submitted.",
+        explanation: "The 'action' attribute defines the server URL where form data should be sent. The 'method' attribute specifies how to send the data — commonly using 'GET' or 'POST'."
+    }, 
+    {
+        question: "What is the purpose of &lt;fieldset&gt; and &lt;legend&gt; in an HTML form?",
+        options: [
+            "They are used to style form buttons with gradients.",
+            "They embed video or audio inside forms.",
+            "They group related form elements and provide a caption for the group.",
+            "They store form data in a local cache."
+        ],
+        correctAnswer: "They group related form elements and provide a caption for the group.",
+        explanation: "&lt;fieldset&gt; is used to group related elements within a form, and &lt;legend&gt; defines a caption or title for that group. This improves both structure and accessibility."
+    },
+     {
+        question: "What is the &lt;section&gt; tag used for in HTML?",
+        options: [
+            "To create inline text containers.",
+            "To define standalone blocks of content with a specific theme or purpose.",
+            "To group CSS style rules.",
+            "To insert external JavaScript files."
+        ],
+        correctAnswer: "To define standalone blocks of content with a specific theme or purpose.",
+        explanation: "The &lt;section&gt; tag represents a standalone section of content, usually with its own heading, such as a chapter, tab, or part of a page."
+    },
+      {
+        question: "What is the difference between &lt;section&gt; and &lt;div&gt; in HTML?",
+        options: [
+            "&lt;section&gt; is used only for navigation, while &lt;div&gt; is for styling.",
+            "&lt;div&gt; adds default styling, while &lt;section&gt; does not.",
+            "&lt;section&gt; is semantic and indicates a block of related content, while &lt;div&gt; is a generic container with no meaning.",
+            "&lt;div&gt; can only be used inside &lt;body&gt;, but &lt;section&gt; cannot."
+        ],
+        correctAnswer: "&lt;section&gt; is semantic and indicates a block of related content, while &lt;div&gt; is a generic container with no meaning.",
+        explanation: "The &lt;section&gt; tag adds meaning (semantics) to your HTML by representing a defined block of content. &lt;div&gt; is purely structural with no implied meaning, used mainly for styling or grouping."
+    },
+
+       
 
 
 
