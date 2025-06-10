@@ -996,7 +996,403 @@ const gameData = {
             options: ["text-align: center;", "align: center;", "text-center: true;", "horizontal-align: center;"],
             correctAnswer: "text-align: center;",
             explanation: "The 'text-align' property is used to align text horizontally, and 'center' aligns it to the center."
-        }
+        },
+        {
+          question: "What are the different types of selectors in CSS?",
+          options: [
+            "Element, ID, Class, Universal, Grouping, Attribute",
+            "HTML, Body, JavaScript, Python, PHP",
+            "Button, Input, Submit, Reset, Label",
+            "Padding, Margin, Border, Font, Display"
+          ],
+          correctAnswer: "Element, ID, Class, Universal, Grouping, Attribute",
+          explanation: "CSS provides several types of selectors to target HTML elements: Element selector (e.g., `h1`), ID selector (e.g., `#header`), Class selector (e.g., `.menu`), Universal selector (`*`), Grouping selector (`h1, h2`), and Attribute selector (`input[type='text']`)."
+        },
+        {
+              question: "What are the common types of selectors in CSS?",
+              options: [
+                "Tag selector, Class selector, ID selector",
+                "Function selector, Method selector, Object selector",
+                "Click selector, Hover selector, Key selector",
+                "Header selector, Footer selector, Body selector"
+              ],
+              correctAnswer: "Tag selector, Class selector, ID selector",
+              explanation: "The most common CSS selectors are: Tag selector (targets HTML tags like `p`, `h1`), Class selector (targets elements with a class using `.` like `.menu`), and ID selector (targets a unique element with `#` like `#header`)."
+        },
+        {
+              question: "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
+              options: [
+                "They are all used to hide elements on scroll.",
+                "They control how elements behave in CSS Grid.",
+                "They determine how an element is positioned relative to its normal position or other elements.",
+                "They are types of animations applied to elements."
+              ],
+              correctAnswer: "They determine how an element is positioned relative to its normal position or other elements.",
+              explanation: "CSS position values like `relative`, `absolute`, `fixed`, and `sticky` control how an element is positioned. `relative` moves from its normal position, `absolute` positions relative to the nearest positioned ancestor, `fixed` stays in place relative to the viewport, and `sticky` sticks to a position based on scroll."
+            },
+        {
+          question: "What does the CSS 'position' property do?",
+          options: [
+            "It sets the background color of an element.",
+            "It controls the visibility of an element.",
+            "It determines how an element is positioned on the page.",
+            "It adjusts the size of an element."
+          ],
+          correctAnswer: "It determines how an element is positioned on the page.",
+          explanation: "The `position` property in CSS specifies how an element is positioned in the document—whether it's static, relative, absolute, fixed, or sticky."
+        },
+        {
+          question: "What does 'position: relative' do in CSS?",
+          options: [
+            "Positions the element at the bottom of the page.",
+            "Makes the element invisible.",
+            "Positions the element relative to its normal position.",
+            "Positions the element based on the viewport."
+          ],
+          correctAnswer: "Positions the element relative to its normal position.",
+          explanation: "`relative` positioning means the element is moved relative to where it would normally be in the document flow."
+        },
+        {
+          question: "What is the effect of 'position: absolute' in CSS?",
+          options: [
+            "It fixes the element to the top of the page.",
+            "It removes the element from the normal flow and positions it relative to its closest positioned ancestor.",
+            "It causes the element to disappear.",
+            "It makes the element scroll with the page."
+          ],
+          correctAnswer: "It removes the element from the normal flow and positions it relative to its closest positioned ancestor.",
+          explanation: "`absolute` positioning removes the element from the flow and positions it according to the nearest ancestor with a `position` other than `static`."
+        },
+        {
+          question: "What does 'position: fixed' do in CSS?",
+          options: [
+            "It locks the element inside its parent container.",
+            "It makes the element move with the page.",
+            "It positions the element relative to the viewport and keeps it fixed during scrolling.",
+            "It centers the element horizontally."
+          ],
+          correctAnswer: "It positions the element relative to the viewport and keeps it fixed during scrolling.",
+          explanation: "`fixed` positioning locks an element to a specific location on the screen, and it stays there even when the page scrolls."
+        },
+        {
+          question: "How does 'position: sticky' behave in CSS?",
+          options: [
+            "The element stays hidden until clicked.",
+            "It behaves like `fixed` positioning permanently.",
+            "It toggles between `relative` and `fixed` based on scroll position.",
+            "It pushes other elements out of view."
+          ],
+          correctAnswer: "It toggles between `relative` and `fixed` based on scroll position.",
+          explanation: "`sticky` positioning keeps the element in its normal flow until a scroll threshold is reached, then it sticks to a position like `fixed`."
+        },
+        {
+          question: "Which CSS position type should you use to create a sticky navigation bar that stays at the top after scrolling?",
+          options: [
+            "relative",
+            "absolute",
+            "sticky",
+            "fixed"
+          ],
+          correctAnswer: "sticky",
+          explanation: "`position: sticky` allows a navbar to scroll normally until it reaches a certain point, after which it sticks to that position."
+        },
+        {
+          question: "Which position should you use to place a tooltip relative to a button element?",
+          options: [
+            "fixed",
+            "absolute",
+            "static",
+            "sticky"
+          ],
+          correctAnswer: "absolute",
+          explanation: "`position: absolute` allows the tooltip to appear near the button by positioning it relative to the nearest non-static ancestor (usually the button’s container)."
+        },
+        {
+          question: "You want to place a button at the bottom-right corner of the viewport. Which CSS position is best?",
+          options: [
+            "relative",
+            "fixed",
+            "static",
+            "sticky"
+          ],
+          correctAnswer: "fixed",
+          explanation: "`position: fixed` is perfect for placing elements like floating action buttons that should remain in place even when scrolling."
+        },
+        {
+          question: "In the following code, where will the red box appear?\n\n.container {\n  position: relative;\n}\n.box {\n  position: absolute;\n  top: 10px;\n  left: 10px;\n}",
+          options: [
+            "10px from the browser’s top-left corner",
+            "10px from the page's scroll position",
+            "10px from the closest positioned ancestor ('.container')",
+            "Centered on the page"
+          ],
+          correctAnswer: "10px from the closest positioned ancestor ('.container')",
+          explanation: "`absolute` positioning is relative to the nearest ancestor with a `position` value other than `static`. Here, `.container` is `relative`."
+        },
+       {
+          question: "When no `position` is specified for an element in CSS, what is its default behavior?",
+          options: [
+            "relative",
+            "absolute",
+            "static",
+            "fixed"
+          ],
+          correctAnswer: "static",
+          explanation: "By default, all elements have `position: static`, which means they appear in the normal flow of the document without any special positioning."
+        },
+        {
+            question: "What is Flexbox used for in CSS?",
+            options: [
+              "Creating 3D animations",
+              "Styling fonts and colors",
+              "Creating responsive layouts with flexible boxes",
+              "Adding interactivity to HTML elements"
+            ],
+            correctAnswer: "Creating responsive layouts with flexible boxes",
+            explanation: "Flexbox (Flexible Box Layout) is used to design one-dimensional layouts that adjust items in rows or columns."
+          },
+          {
+            question: "Which CSS property enables Flexbox on a container?",
+            options: [
+              "position: flex;",
+              "display: flex;",
+              "flex: enable;",
+              "layout: flex;"
+            ],
+            correctAnswer: "display: flex;",
+            explanation: "Setting `display: flex;` on a container turns it into a Flexbox container, allowing its children to be flex items."
+          },
+          {
+            question: "What does justify-content: center; do in a Flexbox container?",
+            options: [
+              "Aligns items to the top",
+              "Centers items horizontally",
+              "Moves items to the right",
+              "Stacks items vertically"
+            ],
+            correctAnswer: "Centers items horizontally",
+            explanation: "`justify-content: center;` horizontally centers the flex items within the container."
+          },
+          {
+            question: "How is CSS Grid different from Flexbox?",
+            options: [
+              "Grid is for animations, Flexbox is not",
+              "Grid is for two-dimensional layouts, Flexbox is for one-dimensional layouts",
+              "Grid only works on images, Flexbox only works on text",
+              "Grid requires JavaScript to work"
+            ],
+            correctAnswer: "Grid is for two-dimensional layouts, Flexbox is for one-dimensional layouts",
+            explanation: "CSS Grid is designed for both rows and columns (2D), while Flexbox handles either rows or columns (1D) but not both at once."
+          },
+          {
+            question: "Which CSS property activates Grid layout?",
+            options: [
+              "display: grid;",
+              "grid: true;",
+              "layout: grid;",
+              "position: grid;"
+            ],
+            correctAnswer: "display: grid;",
+            explanation: "To use CSS Grid, you set `display: grid;` on the container."
+          },
+          {
+            question: "What does the media query @media (max-width: 768px) do?",
+            options: [
+              "Applies styles when the screen is at least 768px wide",
+              "Applies styles only on desktop devices",
+              "Applies styles when the screen width is 768px or less",
+              "Disables styles on mobile devices"
+            ],
+            correctAnswer: "Applies styles when the screen width is 768px or less",
+            explanation: "`@media (max-width: 768px)` is used for responsive design. It triggers styles for devices smaller than or equal to 768 pixels wide."
+          },
+          {
+            question: "Why is Flexbox better than floats for layout?",
+            options: [
+              "Because it uses JavaScript",
+              "Because it automatically wraps text",
+              "Because it provides alignment and distribution tools",
+              "Because it removes the need for CSS"
+            ],
+            correctAnswer: "Because it provides alignment and distribution tools",
+            explanation: "Flexbox makes it easier to align, center, and space elements compared to using float-based layouts."
+          },
+          {
+            question: "How do you make a flex item take up all remaining space?",
+            options: [
+              "flex: auto;",
+              "flex: 1;",
+              "width: 100%;",
+              "margin: 0;"
+            ],
+            correctAnswer: "flex: 1;",
+            explanation: "`flex: 1;` tells the item to grow and take up the remaining space in the flex container."
+          },
+            {
+            question: "What is the purpose of a media query in CSS?",
+            options: [
+              "To change text color only",
+              "To make JavaScript work on mobile",
+              "To apply styles based on device characteristics like screen size",
+              "To embed images into HTML"
+            ],
+            correctAnswer: "To apply styles based on device characteristics like screen size",
+            explanation: "Media queries help create responsive designs by applying CSS rules only when certain conditions are met, such as screen width or orientation."
+          },
+          {
+            question: "Which media query applies styles only on screens wider than 1024px?",
+            options: [
+              "@media (min-width: 1024px)",
+              "@media (max-width: 1024px)",
+              "@media (width: 1024px)",
+              "@media screen and (max-width: 1024px)"
+            ],
+            correctAnswer: "@media (min-width: 1024px)",
+            explanation: "`@media (min-width: 1024px)` targets screens that are 1024 pixels wide or wider."
+          },
+          {
+            question: "What does this media query mean? @media screen and (max-width: 600px)",
+            options: [
+              "It applies styles to all screens regardless of size",
+              "It applies styles when the screen width is exactly 600px",
+              "It applies styles when the screen width is 600px or less",
+              "It applies styles to printers only"
+            ],
+            correctAnswer: "It applies styles when the screen width is 600px or less",
+            explanation: "The `max-width: 600px` condition limits the styles to small screens, like smartphones."
+          },
+          {
+            question: "How can you apply styles only when the device is in landscape mode?",
+            options: [
+              "@media (orientation: portrait)",
+              "@media (orientation: landscape)",
+              "@media screen and (landscape: true)",
+              "@media (max-orientation: landscape)"
+            ],
+            correctAnswer: "@media (orientation: landscape)",
+            explanation: "`@media (orientation: landscape)` targets devices in horizontal (landscape) orientation."
+          },
+          {
+            question: "Which media feature detects high-resolution (Retina) screens?",
+            options: [
+              "resolution",
+              "pixel-density",
+              "device-ratio",
+              "screen-quality"
+            ],
+            correctAnswer: "resolution",
+            explanation: "You can use `min-resolution` or `-webkit-min-device-pixel-ratio` to target high-density displays like Retina."
+          },
+          {
+            question: "What’s the correct syntax to change the background color for screens smaller than 768px?",
+            options: [
+              "@media screen and (max-width: 768px) { body { background: red; } }",
+              "@media (min-width: 768px) { body { background: red; } }",
+              "@screen (768px) { background: red; }",
+              "@media screen 768px { background: red; }"
+            ],
+            correctAnswer: "@media screen and (max-width: 768px) { body { background: red; } }",
+            explanation: "This media query applies styles only to screens that are 768 pixels wide or less."
+          },
+          {
+            question: "Can you combine multiple conditions in a media query?",
+            options: [
+              "No, only one condition per query",
+              "Yes, using commas only",
+              "Yes, using `and`, `or`, and `not`",
+              "Yes, but only in JavaScript"
+            ],
+            correctAnswer: "Yes, using `and`, `or`, and `not`",
+            explanation: "CSS media queries can combine conditions using `and`, `,` (comma as OR), and `not` to create complex responsive rules."
+          },  
+        {
+            question: "What are CSS breakpoints used for?",
+            options: [
+              "To define font sizes only",
+              "To break the layout into sections",
+              "To apply different styles based on screen size",
+              "To load different pages"
+            ],
+            correctAnswer: "To apply different styles based on screen size",
+            explanation: "Breakpoints help you create responsive layouts by applying CSS rules at specific screen widths."
+          },
+          {
+            question: "Which is a common breakpoint for tablets?",
+            options: [
+              "min-width: 320px",
+              "max-width: 1024px",
+              "min-width: 768px and max-width: 1024px",
+              "min-width: 1440px"
+            ],
+            correctAnswer: "min-width: 768px and max-width: 1024px",
+            explanation: "Tablets are usually targeted between 768px and 1024px screen widths."
+          },
+          {
+            question: "How do you write a media query that targets desktop screens only?",
+            options: [
+              "@media screen and (min-width: 1025px)",
+              "@media screen and (max-width: 1024px)",
+              "@media desktop",
+              "@media only (desktop: true)"
+            ],
+            correctAnswer: "@media screen and (min-width: 1025px)",
+            explanation: "Desktops usually start at widths above 1024px, so `min-width: 1025px` targets them."
+          },
+          {
+            question: "Which media query would apply styles only to mobile phones?",
+            options: [
+              "@media screen and (max-width: 768px)",
+              "@media screen and (min-width: 769px)",
+              "@media (min-height: 800px)",
+              "@media only mobile"
+            ],
+            correctAnswer: "@media screen and (max-width: 768px)",
+            explanation: "Mobile screens are usually considered to be 768px or smaller in width."
+          },
+          {
+            question: "What does this media query do? @media (min-width: 768px) and (max-width: 1024px)",
+            options: [
+              "Applies styles to very small screens only",
+              "Targets tablet screen sizes",
+              "Applies styles only on large desktop screens",
+              "Has no effect on screen size"
+            ],
+            correctAnswer: "Targets tablet screen sizes",
+            explanation: "This query applies styles to devices with widths between 768px and 1024px, typically tablets."
+          },
+          {
+            question: "What is the advantage of using multiple breakpoints in responsive design?",
+            options: [
+              "It breaks the layout",
+              "It makes the website less accessible",
+              "It allows fine-tuning of styles for different screen sizes",
+              "It hides content for all devices"
+            ],
+            correctAnswer: "It allows fine-tuning of styles for different screen sizes",
+            explanation: "Multiple breakpoints give you better control over how your design adapts to various devices."
+          },
+          {
+            question: "What does the comma (,) operator do in a media query?",
+            options: [
+              "Combines conditions with AND",
+              "Separates completely different media rules (OR)",
+              "Negates a condition",
+              "It has no meaning in CSS"
+            ],
+            correctAnswer: "Separates completely different media rules (OR)",
+            explanation: "Using a comma allows you to apply styles if either condition is true — it's like using OR."
+          },
+
+
+
+
+
+
+
+        
+
+
+
     ],
     
     qnajs: [
