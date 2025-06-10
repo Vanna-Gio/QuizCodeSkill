@@ -244,7 +244,8 @@ const gameData = {
             { sentence: " similar to (when comparing behavior)", khmer: "ស្រដៀងនឹង" },
             { sentence: " Don't behave like a child", khmer: "កុំប្រព្រឹត្តដូចជាកុមារ" },
             { sentence: "He behaves like his father ", khmer: "គាត់ប្រព្រឹត្តដូចជាឪពុករបស់គាត់" },
-                                    
+            { sentence: "Block-level elements are elements that occupy the full width of their container and always start on a new line in the document.", khmer: "" },
+            { sentence: "Inline elements are elements that do not start on a new line and only take up as much width as necessary. They flow alongside other inline elements within the same block-level parent. ", khmer: "" },                       
             { sentence: "&lt;div&gt; is a block-level element, which means it starts on a new line and takes up the full width of its parent container by default. &lt;span&gt; is an inline-level element, so it only takes up as much width as its content requires and does not break to a new line. Both are commonly used for grouping elements for styling with CSS.", khmer: "" },
             { sentence: "What happens when you place two &lt;div&gt; elements next to each other in HTML?", khmer: "They stack vertically because &lt;div&gt; is a block-level element." }
         ],
