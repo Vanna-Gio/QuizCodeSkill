@@ -159,8 +159,293 @@ const gameData = {
             audio: "audio/accessibility.mp3"  // Cambridge Dictionary pronunciation :contentReference[oaicite:1]{index=1}
           },
         
-
-
+            { 
+            word: "tag", 
+            meaning: "A keyword used to define elements in HTML.", 
+            khmer: "ស្លាក", 
+            audio: "audio/tag.mp3" 
+          },
+          { 
+            word: "attribute", 
+            meaning: "Additional information provided in a tag, such as id, class, or href.", 
+            khmer: "គុណលក្ខណៈ", 
+            audio: "audio/attribute.mp3" 
+          },
+          { 
+            word: "syntax", 
+            meaning: "The rules for how HTML code is written and structured.", 
+            khmer: "វាក្យសម្ពន្ធ", 
+            audio: "audio/syntax.mp3" 
+          },
+          { 
+            word: "element", 
+            meaning: "An individual component of HTML, defined by a tag and its content.", 
+            khmer: "ធាតុ", 
+            audio: "audio/element.mp3" 
+          },
+          { 
+            word: "heading", 
+            meaning: "A title or subtitle defined using <h1> to <h6> tags.", 
+            khmer: "ចំណងជើង", 
+            audio: "audio/heading.mp3" 
+          },
+          { 
+            word: "paragraph", 
+            meaning: "A block of text defined using the <p> tag.", 
+            khmer: "កថាខណ្ឌ", 
+            audio: "audio/paragraph.mp3" 
+          },
+          { 
+            word: "break", 
+            meaning: "An empty element used to insert a line break (<br>).", 
+            khmer: "ចុះបន្ទាត់ថ្មី", 
+            audio: "audio/break.mp3" 
+          },
+          { 
+            word: "link", 
+            meaning: "A clickable connection to another page or resource.", 
+            khmer: "តំណភ្ជាប់", 
+            audio: "audio/link.mp3" 
+          },
+          { 
+            word: "image", 
+            meaning: "A visual element displayed using the <img> tag.", 
+            khmer: "រូបភាព", 
+            audio: "audio/image.mp3" 
+          },
+          { 
+            word: "container", 
+            meaning: "An element used to hold and group other elements together.", 
+            khmer: "ធាតុផ្ទុក", 
+            audio: "audio/container.mp3" 
+          },
+         {
+            word: "border",
+            meaning: "The outer edge or boundary of an element.",
+            khmer: "ស៊ុម",
+            audio: "audio/border.mp3"  // Suggest recording with “border” pronunciation
+          },
+          {
+            word: "appears",
+            meaning: "Becomes visible or can be seen.",
+            khmer: "បង្ហាញ",
+            audio: "audio/appears.mp3"  // Suggest TTS: “uh-PEERS”
+          },
+          {
+            word: "caption",
+            meaning: "A short title or explanation for an image, table, or figure.",
+            khmer: "ចំណងជើងពន្យល់",
+            audio: "audio/caption.mp3"  // TTS: “KAP-shun”
+          },
+          {
+            word: "form",
+            meaning: "An HTML element used to collect user input.",
+            khmer: "សំណុំបែបបទ",
+            audio: "audio/form.mp3"  // TTS: “form”
+          },
+          {
+            word: "improves",
+            meaning: "Makes something better or more effective.",
+            khmer: "ធ្វើឲ្យប្រសើរឡើង",
+            audio: "audio/improves.mp3"  // TTS: “im-PROOVZ”
+          },
+          {
+            word: "organization",
+            meaning: "The structure or arrangement of things.",
+            khmer: "ការរៀបចំ",
+            audio: "audio/organization.mp3"  // TTS: "or-guh-ni-ZAY-shun"
+          },
+          {
+            word: "accessibility",
+            meaning: "The ability for people (especially with disabilities) to access content or services.",
+            khmer: "ភាពងាយស្រួលក្នុងការចូលប្រើ",
+            audio: "audio/accessibility.mp3"  // Cambridge Dictionary pronunciation :contentReference[oaicite:1]{index=1}
+          },
+            // HTML
+          { 
+            word: "doctype", 
+            meaning: "Declaration that tells the browser what version of HTML the page uses.", 
+            khmer: "សេចក្ដីប្រកាសប្រភេទឯកសារ", 
+            audio: "audio/doctype.mp3" 
+          },
+          { 
+            word: "anchor", 
+            meaning: "An <a> tag used to create hyperlinks.", 
+            khmer: "តំណភ្ជាប់", 
+            audio: "audio/anchor.mp3" 
+          },
+          { 
+            word: "metadata", 
+            meaning: "Data about the page (title, description, charset) stored in <head>.", 
+            khmer: "ទិន្នន័យអំពីទំព័រ", 
+            audio: "audio/metadata.mp3" 
+          },
+        
+          // CSS
+          { 
+            word: "selector", 
+            meaning: "The part of a CSS rule that selects which HTML elements to style.", 
+            khmer: "ឧបករណ៍ជ្រើសរើស", 
+            audio: "audio/selector.mp3" 
+          },
+          { 
+            word: "property", 
+            meaning: "A style characteristic like color, width, font-size.", 
+            khmer: "លក្ខណៈសម្បត្តិ", 
+            audio: "audio/property.mp3" 
+          },
+          { 
+            word: "value", 
+            meaning: "The setting given to a CSS property.", 
+            khmer: "តម្លៃ", 
+            audio: "audio/value.mp3" 
+          },
+          { 
+            word: "padding", 
+            meaning: "Space between content and border of an element.", 
+            khmer: "ចន្លោះខាងក្នុង", 
+            audio: "audio/padding.mp3" 
+          },
+          { 
+            word: "margin", 
+            meaning: "Space outside the border of an element.", 
+            khmer: "ចន្លោះខាងក្រៅ", 
+            audio: "audio/margin.mp3" 
+          },
+          { 
+            word: "responsive", 
+            meaning: "Design that adapts to different screen sizes.", 
+            khmer: "ឆបគ្នាទៅនឹងទំហំអេក្រង់", 
+            audio: "audio/responsive.mp3" 
+          },
+        
+          // JavaScript
+          { 
+            word: "function", 
+            meaning: "A reusable block of code that performs a task.", 
+            khmer: "អនុគមន៍", 
+            audio: "audio/function.mp3" 
+          },
+          { 
+            word: "variable", 
+            meaning: "A container for storing data.", 
+            khmer: "អថេរ", 
+            audio: "audio/variable.mp3" 
+          },
+          { 
+            word: "event", 
+            meaning: "An action like a click, hover, or keypress.", 
+            khmer: "ព្រឹត្តិការណ៍", 
+            audio: "audio/event.mp3" 
+          },
+          { 
+            word: "loop", 
+            meaning: "A programming structure that repeats actions.", 
+            khmer: "រង្វិលជុំ", 
+            audio: "audio/loop.mp3" 
+          },
+          { 
+            word: "condition", 
+            meaning: "A decision-making expression that executes based on true/false.", 
+            khmer: "លក្ខខណ្ឌ", 
+            audio: "audio/condition.mp3" 
+          },
+        // More HTML words
+          {
+            word: "attribute",
+            meaning: "Provides additional information about an HTML element.",
+            khmer: "គុណលក្ខណៈ",
+            audio: "audio/attribute.mp3"
+          },
+          {
+            word: "input",
+            meaning: "An HTML element used to collect user data (text, checkbox, etc.).",
+            khmer: "វាលបញ្ចូល",
+            audio: "audio/input.mp3"
+          },
+          {
+            word: "label",
+            meaning: "Describes an input field and is associated with it.",
+            khmer: "ស្លាក",
+            audio: "audio/label.mp3"
+          },
+          {
+            word: "textarea",
+            meaning: "An input field that allows multiline text entry.",
+            khmer: "វាលបញ្ចូលច្រើនបន្ទាត់",
+            audio: "audio/textarea.mp3"
+          },
+          {
+            word: "submit",
+            meaning: "A button that sends form data to a server.",
+            khmer: "បញ្ជូន",
+            audio: "audio/submit.mp3"
+          },
+        
+          // More CSS words
+          {
+            word: "font-family",
+            meaning: "Sets the font type used for text.",
+            khmer: "គ្រួសារ​អក្សរ",
+            audio: "audio/font-family.mp3"
+          },
+          {
+            word: "font-size",
+            meaning: "Specifies the size of text.",
+            khmer: "ទំហំអក្សរ",
+            audio: "audio/font-size.mp3"
+          },
+          {
+            word: "color",
+            meaning: "Sets the color of text.",
+            khmer: "ពណ៌",
+            audio: "audio/color.mp3"
+          },
+          {
+            word: "background-color",
+            meaning: "Sets the background color of an element.",
+            khmer: "ពណ៌ផ្ទៃខាងក្រោយ",
+            audio: "audio/background-color.mp3"
+          },
+          {
+            word: "display",
+            meaning: "Controls the layout behavior of an element (block, inline, flex, etc.).",
+            khmer: "ការបង្ហាញ",
+            audio: "audio/display.mp3"
+          },
+        
+          // More JavaScript words
+          {
+            word: "array",
+            meaning: "A list-like object used to store multiple values.",
+            khmer: "អារេ",
+            audio: "audio/array.mp3"
+          },
+          {
+            word: "object",
+            meaning: "A collection of related data and functions.",
+            khmer: "វត្ថុ",
+            audio: "audio/object.mp3"
+          },
+          {
+            word: "DOM",
+            meaning: "Document Object Model – represents the structure of an HTML page.",
+            khmer: "គំរូវត្ថុឯកសារ (DOM)",
+            audio: "audio/dom.mp3"
+          },
+          {
+            word: "console.log",
+            meaning: "A method used to print messages in the browser console for debugging.",
+            khmer: "បញ្ជាក់សារ​ក្នុង​កុងសូល",
+            audio: "audio/console-log.mp3"
+          },
+          {
+            word: "alert",
+            meaning: "Displays a popup box with a message.",
+            khmer: "បង្ហាញប្រអប់ជូនដំណឹង",
+            audio: "audio/alert.mp3"
+          },
+        
 
     // 
 
