@@ -445,7 +445,349 @@ const gameData = {
             khmer: "បង្ហាញប្រអប់ជូនដំណឹង",
             audio: "audio/alert.mp3"
           },
-        
+        //css property
+                {
+            word: "margin",
+            meaning: "Defines the space outside the border of an element.",
+            khmer: "ចន្លោះខាងក្រៅ",
+            audio: "audio/margin.mp3"
+          },
+          {
+            word: "padding",
+            meaning: "Defines the space between the content and the border of an element.",
+            khmer: "ចន្លោះខាងក្នុង",
+            audio: "audio/padding.mp3"
+          },
+          {
+            word: "border",
+            meaning: "Defines the line surrounding an element.",
+            khmer: "ស៊ុម",
+            audio: "audio/border.mp3"
+          },
+          {
+            word: "width",
+            meaning: "Specifies how wide an element is.",
+            khmer: "ទទឹង",
+            audio: "audio/width.mp3"
+          },
+          {
+            word: "height",
+            meaning: "Specifies how tall an element is.",
+            khmer: "កម្ពស់",
+            audio: "audio/height.mp3"
+          },
+          {
+            word: "text-align",
+            meaning: "Controls the horizontal alignment of text (left, center, right).",
+            khmer: "ការរៀបចំអក្សរតាមបញ្ឈរ",
+            audio: "audio/text-align.mp3"
+          },
+          {
+            word: "line-height",
+            meaning: "Sets the amount of space between lines of text.",
+            khmer: "កម្ពស់ជួរអក្សរ",
+            audio: "audio/line-height.mp3"
+          },
+          {
+            word: "overflow",
+            meaning: "Specifies what happens when content overflows an element’s box.",
+            khmer: "ការរអិលចេញក្រៅប្រអប់",
+            audio: "audio/overflow.mp3"
+          },
+          {
+            word: "visibility",
+            meaning: "Determines if an element is visible or hidden without affecting layout.",
+            khmer: "ភាពអាចមើលឃើញ",
+            audio: "audio/visibility.mp3"
+          },
+          {
+            word: "z-index",
+            meaning: "Controls the vertical stacking order of elements (which appears on top).",
+            khmer: "លំដាប់បង្ហាញជាន់ខ្ពស់",
+            audio: "audio/z-index.mp3"
+          },
+          {
+            word: "opacity",
+            meaning: "Sets how transparent an element is.",
+            khmer: "ភាពស្រអាប់",
+            audio: "audio/opacity.mp3"
+          },
+          {
+            word: "position",
+            meaning: "Specifies the type of positioning method used for an element (static, relative, absolute, fixed, sticky).",
+            khmer: "ទីតាំង",
+            audio: "audio/position.mp3"
+          },
+          {
+            word: "flexbox",
+            meaning: "A layout mode in CSS used to align and distribute space among items in a container.",
+            khmer: "រចនាប្លង់បែបបត់បែន (Flexbox)",
+            audio: "audio/flexbox.mp3"
+          },
+          {
+            word: "grid",
+            meaning: "A layout system for arranging items into rows and columns.",
+            khmer: "បណ្តាញប្លង់",
+            audio: "audio/grid.mp3"
+          },
+          {
+            word: "box-shadow",
+            meaning: "Applies shadow effects around an element’s frame.",
+            khmer: "ស្រមោលប្រអប់",
+            audio: "audio/box-shadow.mp3"
+          },
+          {
+            word: "transition",
+            meaning: "Controls the speed of animation between property changes.",
+            khmer: "ការផ្លាស់ប្ដូរយឺតៗ",
+            audio: "audio/transition.mp3"
+          },
+          {
+            word: "transform",
+            meaning: "Applies 2D or 3D transformations to an element (e.g., rotate, scale).",
+            khmer: "ការបម្លែង",
+            audio: "audio/transform.mp3"
+          },
+          {
+            word: "cursor",
+            meaning: "Changes the type of cursor shown when the mouse is over an element.",
+            khmer: "គ្រាប់ទស្សន៍",
+            audio: "audio/cursor.mp3"
+          },
+          {
+            word: "variable",
+            meaning: "A container for storing data values.",
+            khmer: "អថេរ",
+            audio: "audio/variable.mp3"
+          },
+          {
+            word: "function",
+            meaning: "A block of code designed to perform a particular task.",
+            khmer: "មុខងារ",
+            audio: "audio/function.mp3"
+          },
+          {
+            word: "parameter",
+            meaning: "A value passed into a function to customize its behavior.",
+            khmer: "ប៉ារ៉ាម៉ែត្រ",
+            audio: "audio/parameter.mp3"
+          },
+          {
+            word: "argument",
+            meaning: "The actual value passed to a function parameter.",
+            khmer: "អាគ្យូម៉ង់",
+            audio: "audio/argument.mp3"
+          },
+          {
+            word: "return",
+            meaning: "Ends function execution and specifies a value to be returned.",
+            khmer: "ត្រឡប់តម្លៃ",
+            audio: "audio/return.mp3"
+          },
+          {
+            word: "array",
+            meaning: "An ordered collection of values.",
+            khmer: "អារេ",
+            audio: "audio/array.mp3"
+          },
+          {
+            word: "object",
+            meaning: "A collection of key-value pairs used to store structured data.",
+            khmer: "វត្ថុ",
+            audio: "audio/object.mp3"
+          },
+          {
+            word: "loop",
+            meaning: "A control structure used to repeat a block of code.",
+            khmer: "រង្វិលជុំ",
+            audio: "audio/loop.mp3"
+          },
+          {
+            word: "condition",
+            meaning: "A statement that controls code execution based on true or false.",
+            khmer: "លក្ខខណ្ឌ",
+            audio: "audio/condition.mp3"
+          },
+          {
+            word: "boolean",
+            meaning: "A data type with only two values: true or false.",
+            khmer: "តម្លៃប៊ូលីន",
+            audio: "audio/boolean.mp3"
+          },
+          {
+            word: "string",
+            meaning: "A sequence of characters used to represent text.",
+            khmer: "ខ្សែអក្សរ",
+            audio: "audio/string.mp3"
+          },
+          {
+            word: "number",
+            meaning: "A data type used to represent numeric values.",
+            khmer: "លេខ",
+            audio: "audio/number.mp3"
+          },
+          {
+            word: "undefined",
+            meaning: "A variable that has been declared but not assigned a value.",
+            khmer: "មិនបានកំណត់",
+            audio: "audio/undefined.mp3"
+          },
+          {
+            word: "null",
+            meaning: "Represents an intentional absence of any value or object.",
+            khmer: "គ្មានតម្លៃ",
+            audio: "audio/null.mp3"
+          },
+          {
+            word: "event",
+            meaning: "An action that occurs in the browser (like a click or keypress).",
+            khmer: "ព្រឹត្តិការណ៍",
+            audio: "audio/event.mp3"
+          },
+          {
+            word: "DOM",
+            meaning: "The Document Object Model — a tree structure representing HTML elements.",
+            khmer: "គំរូវត្ថុឯកសារ (DOM)",
+            audio: "audio/dom.mp3"
+          },
+          {
+            word: "console",
+            meaning: "A tool used to display messages for debugging.",
+            khmer: "កុងសូល",
+            audio: "audio/console.mp3"
+          },
+          {
+            word: "debug",
+            meaning: "To find and fix errors in code.",
+            khmer: "ស្វែងរក និងជួសជុលកំហុស",
+            audio: "audio/debug.mp3"
+          },
+          {
+            word: "syntax",
+            meaning: "The rules that define the structure of code.",
+            khmer: "វាក្យសម្ពន្ធ",
+            audio: "audio/syntax.mp3"
+          },
+        {
+            word: "margin",
+            meaning: "The space outside the border of an element.",
+            khmer: "ចន្លោះខាងក្រៅ",
+            audio: "audio/margin.mp3"
+          },
+          {
+            word: "padding",
+            meaning: "The space between the content and the border of an element.",
+            khmer: "ចន្លោះខាងក្នុង",
+            audio: "audio/padding.mp3"
+          },
+          {
+            word: "border-radius",
+            meaning: "Defines the roundness of element corners.",
+            khmer: "ខ្នាតមូលនៃជ្រុង",
+            audio: "audio/border-radius.mp3"
+          },
+          {
+            word: "box-shadow",
+            meaning: "Adds shadow effects to an element.",
+            khmer: "ស្រមោលប្រអប់",
+            audio: "audio/box-shadow.mp3"
+          },
+          {
+            word: "display",
+            meaning: "Specifies how an element is displayed on the page.",
+            khmer: "បង្ហាញលើទំព័រ",
+            audio: "audio/display.mp3"
+          },
+          {
+            word: "position",
+            meaning: "Specifies the type of positioning method used for an element.",
+            khmer: "ទីតាំង",
+            audio: "audio/position.mp3"
+          },
+          {
+            word: "z-index",
+            meaning: "Controls the vertical stacking order of elements.",
+            khmer: "លំដាប់ស្រទាប់",
+            audio: "audio/z-index.mp3"
+          },
+          {
+            word: "flex",
+            meaning: "A layout model for flexible and responsive elements.",
+            khmer: "ប្លង់បត់បែន",
+            audio: "audio/flex.mp3"
+          },
+          {
+            word: "grid",
+            meaning: "A layout system using rows and columns.",
+            khmer: "ប្លង់ក្រឡា",
+            audio: "audio/grid.mp3"
+          },
+          {
+            word: "opacity",
+            meaning: "Defines the transparency level of an element.",
+            khmer: "ភាពស្រអាប់",
+            audio: "audio/opacity.mp3"
+          },
+            {
+            word: "callback",
+            meaning: "A function passed into another function to be called later.",
+            khmer: "មុខងារហៅត្រឡប់",
+            audio: "audio/callback.mp3"
+          },
+          {
+            word: "promise",
+            meaning: "An object that represents the eventual result of an asynchronous operation.",
+            khmer: "ពាក្យសន្យា (សម្រាប់ async)",
+            audio: "audio/promise.mp3"
+          },
+          {
+            word: "async",
+            meaning: "Keyword that makes a function return a promise and allows use of await.",
+            khmer: "មុខងារផ្នែកក្រោយ asynchronous",
+            audio: "audio/async.mp3"
+          },
+          {
+            word: "await",
+            meaning: "Used to wait for a promise to resolve inside an async function.",
+            khmer: "រងចាំការជួយផ្តល់តម្លៃ async",
+            audio: "audio/await.mp3"
+          },
+          {
+            word: "event loop",
+            meaning: "A mechanism that handles asynchronous callbacks in JavaScript.",
+            khmer: "រង្វិលព្រឹត្តិការណ៍",
+            audio: "audio/event-loop.mp3"
+          },
+          {
+            word: "closure",
+            meaning: "A function that remembers the variables from its outer scope.",
+            khmer: "បិទវដ្តអថេរខាងក្រៅ",
+            audio: "audio/closure.mp3"
+          },
+          {
+            word: "hoisting",
+            meaning: "JavaScript's behavior of moving declarations to the top of the scope.",
+            khmer: "លេចឡើងខាងលើ",
+            audio: "audio/hoisting.mp3"
+          },
+          {
+            word: "scope",
+            meaning: "The accessibility of variables and functions in different parts of code.",
+            khmer: "វិសាលភាព",
+            audio: "audio/scope.mp3"
+          },
+          {
+            word: "this",
+            meaning: "Refers to the current object in context.",
+            khmer: "តំណាងអ្វីដែលកំពុងត្រូវយោង",
+            audio: "audio/this.mp3"
+          },
+          {
+            word: "arrow function",
+            meaning: "A shorter way to write functions using `=>` syntax.",
+            khmer: "មុខងារមានសញ្ញាព្រិល (=>)",
+            audio: "audio/arrow-function.mp3"
+          },      
 
     // 
 
@@ -1497,7 +1839,7 @@ function checkVocabAnswer(selectedAnswer, correctAnswer, word) {
     }
     showExplanation(gameState.currentPool[gameState.currentIndex].explanation || `The word "${word}" means "${correctAnswer}" (${gameState.currentPool[gameState.currentIndex].khmer}).`);
     updateScoreDisplay();
-    setTimeout(nextVocabQuestion, 5000); // Wait 2 seconds before next question
+    setTimeout(nextVocabQuestion, 10000); // Wait 2 seconds before next question
 }
 
 function disableOptions() {
