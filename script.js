@@ -1782,7 +1782,7 @@ function renderVocabQuestion() {
     });
 
     if (gameState.mode === 'vocab') {
-        startTimer(15, updateTimerBar, () => {
+        startTimer(30, updateTimerBar, () => {
             document.getElementById('feedback').className = 'feedback feedback-error';
             document.getElementById('feedback').textContent = "Time's up! The correct meaning was: " + currentWord.meaning;
             showExplanation(currentWord.explanation || `The word "${currentWord.word}" means "${currentWord.meaning}" (${currentWord.khmer}).`);
@@ -1796,7 +1796,7 @@ function renderVocabQuestion() {
 function updateTimerBar(timeLeft) {
     const timerBar = document.getElementById('timerBar');
     if (timerBar) {
-        const percentage = (timeLeft / 15) * 100; // 15 is the initial time
+        const percentage = (timeLeft / 30) * 100; // 15 is the initial time
         timerBar.style.width = `${percentage}%`;
         timerBar.style.backgroundColor = percentage > 50 ? varCSSValue('--success-color') : (percentage > 20 ? varCSSValue('--accent-color') : varCSSValue('--error-color'));
     }
@@ -1839,7 +1839,7 @@ function checkVocabAnswer(selectedAnswer, correctAnswer, word) {
     }
     showExplanation(gameState.currentPool[gameState.currentIndex].explanation || `The word "${word}" means "${correctAnswer}" (${gameState.currentPool[gameState.currentIndex].khmer}).`);
     updateScoreDisplay();
-    setTimeout(nextVocabQuestion, 10000); // Wait 2 seconds before next question
+    setTimeout(nextVocabQuestion, 5000); // Wait 2 seconds before next question
 }
 
 function disableOptions() {
