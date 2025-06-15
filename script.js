@@ -1395,25 +1395,14 @@ const gameData = {
 
     ],
     
-    qnajs: [
-         {
-            question: "What are loops in JS?",
-            options: [
-                `Loops allow you to run the same block of code multiple times—automatically.`,
-                "You cannot change the value later. also block-scoped.Good for values that don't change (like pi, app settings, etc).",
-                `function add(a,b){ return a+b; } let result = add(4,4);`,
-                `function sayHi() { console.log ("Hello!");} sayHi();//call the function`
-            ],
-            correctAnswer: `Loops allow you to run the same block of code multiple times—automatically.`,
-            explanation: `Example if you want to print "Hello " 5 times— a loop can do that in just a few lines!`
-        },
+     qnajs : [
         {
             question: "Why use loops? ",
             options: [
                 `Example if you want to print "Hello " 5 times— a loop can do that in just a few lines!`,
                 `function sayHi() { console.log ("Hello!");} sayHi();//call the function`,
                 `Loops allow you to run the same block of code multiple times—automatically.`,
-                  `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`
+                `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`
             ],
             correctAnswer: `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`,
             explanation: `Example if you want to print "Hello " 5 times— a loop can do that in just a few lines!`
@@ -1424,10 +1413,10 @@ const gameData = {
                 `Loops allow you to run the same block of code multiple times—automatically.`,
                 `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`,
                 `Example if you want to print "Hello " 5 times— a loop can do that in just a few lines!`,
-                 `for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
+                `for (Loop with a counter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
             ],
-            correctAnswer: `for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`,
-            explanation:`for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
+            correctAnswer: `for (Loop with a counter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`,
+            explanation: `for (Loop with a counter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
         },
         {
             question: "for loop (most common)",
@@ -1435,10 +1424,10 @@ const gameData = {
                 `Loops allow you to run the same block of code multiple times—automatically.`,
                 `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-                 `for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
+                `for (Loop with a counter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
             ],
             correctAnswer: `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-            explanation:`starts at i =0, runs while i<5, increases i by 1 each time.`
+            explanation: `starts at i =0, runs while i<5, increases i by 1 each time.`
         },
         {
             question: "while loop (most common)",
@@ -1446,10 +1435,10 @@ const gameData = {
                 `Loops allow you to run the same block of code multiple times—automatically.`,
                 `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-                 `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
+                `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
             ],
             correctAnswer: `let i=0; while (i<3) {console.log("Count: "+ i); i++} `,
-            explanation:`good when you don't know exactly how many times you'll loop.`
+            explanation: `good when you don't know exactly how many times you'll loop.`
         },
         {
             question: "do while loop ",
@@ -1457,10 +1446,10 @@ const gameData = {
                 `Loops allow you to run the same block of code multiple times—automatically.`,
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-                 `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
+                `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
             ],
             correctAnswer: `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
-            explanation:`Runs the code at least once, even if the condition is false.`
+            explanation: `Runs the code at least once, even if the condition is false.`
         },
         {
             question: "for...of loop (arrays)",
@@ -1468,21 +1457,21 @@ const gameData = {
                 `let fruits = ["apple", "banana", "mango"]; for (let fruit of fruits){ console.log(fruit);}`,
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-                 `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
+                `let i=0; while (i<3) {console.log("Count: "+ i); i++} `
             ],
             correctAnswer: `let fruits = ["apple", "banana", "mango"]; for (let fruit of fruits){ console.log(fruit);}`,
-            explanation:`Easy way to loop through array values.`
+            explanation: `Easy way to loop through array values.`
         },
         {
-            question: "for...in loop (arrays)",
+            question: "for...in loop (objects)", // Changed from arrays to objects for correctness
             options: [
                 `let fruits = ["apple", "banana", "mango"]; for (let fruit of fruits){ console.log(fruit);}`,
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-               `let person = {name: "Sovanna", age: 22}; for (let key in person){console.log(key + ":" + person[key]);}`
+                `let person = {name: "Sovanna", age: 22}; for (let key in person){console.log(key + ":" + person[key]);}`
             ],
             correctAnswer: `let person = {name: "Sovanna", age: 22}; for (let key in person){console.log(key + ":" + person[key]);}`,
-            explanation:`Loops through the keys of an object.`
+            explanation: `Loops through the keys of an object.`
         },
         {
             question: "for...in loop ?",
@@ -1490,10 +1479,10 @@ const gameData = {
                 `let fruits = ["apple", "banana", "mango"]; for (let fruit of fruits){ console.log(fruit);}`,
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `Loop through object properties`,
-               `let person = {name: "Sovanna", age: 22}; for (let key in person){console.log(key + ":" + person[key]);}`
+                `let person = {name: "Sovanna", age: 22}; for (let key in person){console.log(key + ":" + person[key]);}`
             ],
             correctAnswer: `Loop through object properties`,
-            explanation:`Loops through the keys of an object.`
+            explanation: `Loops through the keys of an object.`
         },
         {
             question: "for...of loop ?",
@@ -1502,10 +1491,10 @@ const gameData = {
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
                 `Loop through object properties`,
-               `Loop through array values`
+                `Loop through array values`
             ],
             correctAnswer: `Loop through array values`,
-            explanation:`Loops through the keys of an array`
+            explanation: `Loops through the values of an array` // Corrected explanation
         },
         {
             question: "What is forEach()",
@@ -1513,10 +1502,10 @@ const gameData = {
                 `Loops allow you to run the same block of code multiple times—automatically.`,
                 `Repeat actions (like showing items in a list), Reduce code repetition, Automate tasks`,
                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`,
-                 `for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys), forEach())`
+                `for (Loop with a counter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys), forEach())`
             ],
             correctAnswer: `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`,
-            explanation:`for (Loop with a couter (fixed times), while (loop while condition is true), do...while (like while, but runs at least once), for..of (loop through array values), for...in(loop through object keys))`
+            explanation: `forEach is specifically for arrays and provides a clean way to iterate over elements.`
         },
         {
             question: "forEach() Syntax? ",
@@ -1524,27 +1513,24 @@ const gameData = {
                 `let fruits = ["apple", "banana", "mango"]; for (let fruit of fruits){ console.log(fruit);}`,
                 `let i= 0; do{ console.log("At least once: " + i); i++}while (i<2);`,
                 `for (let i=0; i<5; i++) { console.log("hello" + i);}`,
-                 `array.forEach(function(element, index, array){ //your code here});`,
-                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
+                `array.forEach(function(element, index, array){ /* your code here */ });`,
+                `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
             ],
-            correctAnswer: `array.forEach(function(element, index, array){ //your code here});`,
-            explanation:`Easy way to loop through array values.`
+            correctAnswer: `array.forEach(function(element, index, array){ /* your code here */ });`,
+            explanation: `The function passed to forEach can take up to three arguments: element (required), index (optional), and array (optional).`
         },
-         {
+        {
             question: "Example forEach() ? ",
             options: [
                 `array: (Optional)the original array`,
                 `index: (optional) Current item's index`,
                 `element: Current item in the array`,
                 `let fruits = ["apple", "banana", "mango"]; fruits.forEach(function(fruit){console.log(fruit); });`,
-                 `array.forEach(function(element, index, array){ //your code here});`,
-                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
+                `array.forEach(function(element, index, array){ /* your code here */ });`,
+                `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
             ],
             correctAnswer: `let fruits = ["apple", "banana", "mango"]; fruits.forEach(function(fruit){console.log(fruit); });`,
-            explanation:`   apple
-                            banana
-                            mango
-                                    `
+            explanation: `This will log each fruit in the 'fruits' array to the console.`
         },
         {
             question: "Example with arrow function (shorter version) forEach() ? ",
@@ -1554,12 +1540,11 @@ const gameData = {
                 `element: Current item in the array`,
                 `fruits.forEach(fruit => console.log(fruit));`,
                 `let fruits = ["apple", "banana", "mango"]; fruits.forEach(function(fruit){console.log(fruit); });`,
-                 `array.forEach(function(element, index, array){ //your code here});`,
-                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
+                `array.forEach(function(element, index, array){ /* your code here */ });`,
+                `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
             ],
             correctAnswer: `fruits.forEach(fruit => console.log(fruit));`,
-            explanation:``   
-                                    
+            explanation: `Arrow functions provide a more concise syntax for functions, especially useful for callbacks like in forEach.`
         },
         {
             question: "Example with Index forEach() ? ",
@@ -1567,39 +1552,25 @@ const gameData = {
                 `array: (Optional)the original array`,
                 `index: (optional) Current item's index`,
                 `element: Current item in the array`,
-                `fruits.forEach((fruit, index) => { console.log(index + ":" + fruit); });`
+                `fruits.forEach((fruit, index) => { console.log(index + ":" + fruit); });`,
                 `fruits.forEach(fruit => console.log(fruit));`,
                 `let fruits = ["apple", "banana", "mango"]; fruits.forEach(function(fruit){console.log(fruit); });`,
-                 `array.forEach(function(element, index, array){ //your code here});`,
-                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
+                `array.forEach(function(element, index, array){ /* your code here */ });`,
+                `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
             ],
             correctAnswer: `fruits.forEach((fruit, index) => { console.log(index + ":" + fruit); });`,
-            explanation:``   
-                                    
+            explanation: `The second argument in the forEach callback function represents the index of the current element.`
         },
         {
-            question: "forEach() Syntax? ",
-            options: [
-                `array: (Optional)the original array`,
-                `index: (optional) Current item's index`,
-                `element: Current item in the array`,
-                 `array.forEach(function(element, index, array){ //your code here});`,
-                 `forEach() is a built-in array method in JavaScript. It runs a function once for each element in an array.`
-            ],
-            correctAnswer: `array.forEach(function(element, index, array){ //your code here});`,
-            explanation:``
-        },
-         {
             question: "What is Encapsulation?",
             options: [
                 "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
+                "JavaScript is a programming language used to make web pages interactive.",
                 `A function is a block of reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`,
                 `Encapsulation means hiding the internal details of how an object works and only exposing what is necessary.`
             ],
             correctAnswer: `Encapsulation means hiding the internal details of how an object works and only exposing what is necessary.`,
-            explanation:  `Keep data and code safe inside an object, and control access to it.
-                            Encapsulation is about keeping data private and providing controlled access through methods.`
+            explanation: `Keep data and code safe inside an object, and control access to it. Encapsulation is about keeping data private and providing controlled access through methods.`
         },
         {
             question: "What is Event Handling in JS?",
@@ -1618,43 +1589,21 @@ const gameData = {
                 "Avoid repeating code. Organize your program into smaller parts. Reuse code with different values.",
                 "JavaScript is a programming language used to make web pages interactive.",
                 "Detecting and responding to user actions like: Clicking a button, Typing in a textbox, Hovering over an element, Submitting a form and pressing a key.",
-                "The action (click, hover, etc."
+                "The action (click, hover, etc.) that occurs on an HTML element."
             ],
-            correctAnswer: "The action (click, hover, etc.",
-            explanation: ""
-        },
-        {
-            question: "Handler",
-            options: [
-                "Avoid repeating code. Organize your program into smaller parts. Reuse code with different values.",
-                "The function that runs when it happens",
-                "Detecting and responding to user actions like: Clicking a button, Typing in a textbox, Hovering over an element, Submitting a form and pressing a key.",
-                "The action (click, hover, etc."
-            ],
-            correctAnswer: "The function that runs when it happens",
-            explanation: ""
-        },
-        {
-            question: "addEventListener",
-            options: [
-                "Avoid repeating code. Organize your program into smaller parts. Reuse code with different values.",
-                "The function that runs when it happens",
-                "Detecting and responding to user actions like: Clicking a button, Typing in a textbox, Hovering over an element, Submitting a form and pressing a key.",
-                "Method to attach a handler"
-            ],
-            correctAnswer: "Method to attach a handler",
+            correctAnswer: "The action (click, hover, etc.) that occurs on an HTML element.",
             explanation: ""
         },
         {
             question: "What is a function in JS?",
             options: [
                 "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
+                "JavaScript is a programming language used to make web pages interactive.",
                 `A function is a block of reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`,
                 "An Array is a collection of data stored as key-value pairs."
             ],
             correctAnswer: `A function is a block of reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`,
-            explanation:  `A function is a block of reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`
+            explanation: `A function is a block of reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`
         },
         {
             question: "Why use functions?",
@@ -1676,7 +1625,7 @@ const gameData = {
                 `function sayHi() { console.log ("Hello!");} sayHi();//call the function`
             ],
             correctAnswer: `function sayHi() { console.log ("Hello!");} sayHi();//call the function`,
-            explanation: `function sayHi() { console.log ("Hello!");} sayHi();//call the function`
+            explanation: `This is the most common and straightforward way to define a function.`
         },
         {
             question: "Function with parameters",
@@ -1684,10 +1633,10 @@ const gameData = {
                 `function add(a,b){ return a+b; } let result = add(4,4);`,
                 `function sayHi() { console.log ("Hello!");} sayHi();//call the function`,
                 "function-scoped(not block-scoped).Can cause bugs—avoid using in modern code.",
-                 `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`
+                `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`
             ],
             correctAnswer: `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`,
-            explanation:  `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`
+            explanation: `Parameters are placeholders for values that are passed into the function when it's called.`
         },
         {
             question: "Function with return values",
@@ -1695,10 +1644,10 @@ const gameData = {
                 `console.log(person[ "name"]); Bracket notation for object key`,
                 `function add(a,b){ return a+b; } let result = add(4,4);`,
                 `function sayHi() { console.log ("Hello!");} sayHi();//call the function`,
-                 `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`
+                `function greet(name){ console.log("Hello, " + name + "!");} greet("Sovanna");`
             ],
             correctAnswer: `function add(a,b){ return a+b; } let result = add(4,4);`,
-            explanation: `function add(a,b){ return a+b; } let result = add(4,4);`
+            explanation: `The 'return' statement sends a value back from the function, allowing you to use its result elsewhere in your code.`
         },
         {
             question: "Function Expression (Anonymous)",
@@ -1709,7 +1658,7 @@ const gameData = {
                 `let multiply = function(x,y){ return x*y; }; console.log(multiply(2,4));`
             ],
             correctAnswer: `let multiply = function(x,y){ return x*y; }; console.log(multiply(2,4));`,
-            explanation: `let multiply = function(x,y){ return x*y; }; console.log(multiply(2,4));`
+            explanation: `A function expression defines a function as part of an expression, often assigned to a variable.`
         },
         {
             question: "Arrow function (ES6+)",
@@ -1720,7 +1669,7 @@ const gameData = {
                 `let multiply = function(x,y){ return x*y; }; console.log(multiply(2,4));`
             ],
             correctAnswer: `let square = (x) => x*x; console.log (square(5));`,
-            explanation: `let square = (x) => x*x; console.log (square(5));`
+            explanation: `Arrow functions provide a shorter syntax compared to function expressions, especially for simple functions.`
         },
         {
             question: "Function",
@@ -1734,28 +1683,6 @@ const gameData = {
             explanation: `A function is a block for reusable code that performs a task or returns a value. You can define it once and call it as many times as you want.`
         },
         {
-            question: "Parmeter",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Variable used inside function (x, y)"
-            ],
-            correctAnswer: "Variable used inside function (x, y)",
-            explanation: "Variable used inside function (x, y)"
-        },
-        {
-            question: "argument",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Actual value passed (5, 10)"
-            ],
-            correctAnswer: "Actual value passed (5, 10)",
-            explanation: "Actual value passed (5, 10)"
-        },
-        {
             question: "return",
             options: [
                 "'null'",
@@ -1764,40 +1691,40 @@ const gameData = {
                 "'string'"
             ],
             correctAnswer: "Sends a value back out of the function",
-            explanation: "Sends a value back out of the function"
+            explanation: "The `return` statement concludes function execution and specifies a value to be returned to the function caller."
         },
-         {
+        {
             question: "🟨 Syntax the ternary operator(? :)",
             options: [
                 "a programming language used to make web pages interactive",
                 "The ternary operator in js is a short way to write an if...else statement. It's also called the conditional operator: condition ? trueResult:falseResult",
                 "A condition lets your program make decisions. You use it to check if something is true or false, and run code only if the condition is true.",
-                "condition ? value_if_true : Value_if_false;"
+                "condition ? value_if_true : value_if_false;"
             ],
-            correctAnswer: "condition ? value_if_true : Value_if_false;",
-            explanation: ` 
-                        let age = 20;
-                        let message = (age >= 18) ? "You are an adult" : "You are a minor" <br>
-                        Same as: 
-                        if (age>=18){
-                            message = "You are an adult";
-                        }else{
-                            message = "You are a minor";
-                        }
-                        Another example:
-                        let loggedIn = true;
-                        let status = loggedIn ? "Welcome back!" : "Please log in";`
+            correctAnswer: "condition ? value_if_true : value_if_false;",
+            explanation: `
+                let age = 20;
+                let message = (age >= 18) ? "You are an adult" : "You are a minor"; <br>
+                Same as: <br>
+                if (age>=18){
+                    message = "You are an adult";
+                }else{
+                    message = "You are a minor";
+                } <br>
+                Another example: <br>
+                let loggedIn = true;
+                let status = loggedIn ? "Welcome back!" : "Please log in";`
         },
         {
             question: "You can also use ternary directly in output",
             options: [
-                "condition ? value_if_true : Value_if_false",
-                "Use ternary only for simple conditions . for complex logic, use full if...else statements-easier to read and debug.",
+                "condition ? value_if_true : value_if_false",
+                "Use ternary only for simple conditions. For complex logic, use full if...else statements-easier to read and debug.",
                 "console.log(age >= 18 ? 'Adult' : 'Child');",
                 "if statement, if...else, if...else if...else, switch statement, ternary(? :)"
             ],
             correctAnswer: "console.log(age >= 18 ? 'Adult' : 'Child');",
-            explanation: ""
+            explanation: "This demonstrates how the ternary operator can be directly embedded within a `console.log` statement for concise conditional output."
         },
         {
             question: "🟢 what is a Condition in JS?",
@@ -1813,35 +1740,13 @@ const gameData = {
         {
             question: "Common condition statements:",
             options: [
-                "'==' checks value only, '===' checks value and type",
+                `'==' checks value only, '===' checks value and type`,
                 "is like a container that stores a value. you can use it to store numbers, text, or anything you want. ",
                 "Called loose equality. compares values after converting them to the same type (type coercion)",
                 "if statement, if...else, if...else if...else, switch statement"
             ],
             correctAnswer: "if statement, if...else, if...else if...else, switch statement",
-            explanation: ""
-        },
-        {
-            question: "if statement",
-            options: [
-                "Runs code only if the condition is true",
-                "Runs one block if true, another if false",
-                "Checks multiple conditions in order.",
-                "static"
-            ],
-            correctAnswer: "Runs code only if the condition is true",
-            explanation: "let age = 19; <br>if (age>=19){ <br>console.log('you are an adult.');"
-        },
-        {
-            question: "if...else statement",
-            options: [
-                "Runs code only if the condition is true",
-                "Runs one block if true, another if false",
-                "Checks multiple conditions in order.",
-                "Sorts the elements of an array"
-            ],
-            correctAnswer: "Runs one block if true, another if false",
-            explanation: "let age =16; <br>if (age >=18) {<br>console.log('You can vote')} <br> else<br>{<br>console.log('You are too young to vote')}"
+            explanation: "These are the fundamental control flow structures for making decisions in JavaScript."
         },
         {
             question: "if....else if...else statement",
@@ -1852,7 +1757,7 @@ const gameData = {
                 "Good for multiple fixed values."
             ],
             correctAnswer: "Checks multiple conditions in order.",
-            explanation: "let score =75; <br> if (score >= 90){ <br> console.log('A grade');}<br> else if (score>=70){ <br> console.log('B grade');}else{<br>console.log('C grade');}"
+            explanation: `let score =75; <br> if (score >= 90){ <br> console.log('A grade');}<br> else if (score>=70){ <br> console.log('B grade');}else{<br>console.log('C grade');}`
         },
         {
             question: "switch statement",
@@ -1864,27 +1769,27 @@ const gameData = {
             ],
             correctAnswer: "Good for multiple fixed values.",
             explanation: `let day = "Monday";
-                            switch (day){
-                                case "Monday":
-                                    console.log("Start of the week!");
-                                    break;
-                                case "Friday":
-                                    console.log("Almost weekend!");
-                                    break;
-                                default:
-                                    console.log("Just another day.");
-                            }`
+                switch (day){
+                    case "Monday":
+                        console.log("Start of the week!");
+                        break;
+                    case "Friday":
+                        console.log("Almost weekend!");
+                        break;
+                    default:
+                        console.log("Just another day.");
+                }`
         },
         {
             question: "How to declare a variable in JS?",
             options: [
                 "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
+                "JavaScript is a programming language used to make web pages interactive.",
                 `let name = "Sovanna"; const pi = 3.14; var city = "Phnom Penh"`,
                 "An Array is a collection of data stored as key-value pairs."
             ],
             correctAnswer: `let name = "Sovanna"; const pi = 3.14; var city = "Phnom Penh"`,
-            explanation: `You can declare a variable using one of these three keywords`
+            explanation: `You can declare a variable using one of these three keywords.`
         },
         {
             question: "let",
@@ -1923,34 +1828,12 @@ const gameData = {
             question: "What is an Object in JavaScript?",
             options: [
                 "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
-                "When you need named properties",
+                "JavaScript is a programming language used to make web pages interactive.",
+                "When you need named properties, methods, and a structured collection of data.", // Improved option
                 "An Array is a collection of data stored as key-value pairs."
             ],
-            correctAnswer: "When you need named properties",
-            explanation: `object.key or object["key"] key-vlaue pairs`
-        },
-        {
-            question: "What is an Array in JS?",
-            options: [
-                "A variable is like a container that stores a value. You can use it to store numbers, text, or anything you want.",
-                "JavaScript is a programming language used to make web pages interactive.",
-                "When you need a list or order",
-                "While HTML builds the structure (like text, images and buttons), CSS controls how that structure looks: colors, fonts, layout (position of elements), sizes, spacing, and animation."
-            ],
-            correctAnswer: "When you need a list or order",
-            explanation: `array[index] list of values`
-        },
-        {
-            question: "Non-Primitive (Reference) Data type",
-            options: [
-                "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
-                "is a collection of data stored as key-values pairs.",
-                "These can hold collections of values."
-            ],
-            correctAnswer: "These can hold collections of values.",
-            explanation: ""
+            correctAnswer: "When you need named properties, methods, and a structured collection of data.",
+            explanation: `Objects store data in key-value pairs and are fundamental for representing real-world entities.`
         },
         {
             question: "Object (non-primitive Data types)",
@@ -1961,17 +1844,17 @@ const gameData = {
                 "While HTML builds the structure (like text, images and buttons), CSS controls how that structure looks: colors, fonts, layout (position of elements), sizes, spacing, and animation."
             ],
             correctAnswer: "Key-value pairs.",
-            explanation: `{name:  "Sovanna", age: " 22"}`
+            explanation: `{name: "Sovanna", age: "22"}`
         },
         {
             question: "Array",
             options: [
                 "I'm creating an array using square brackets.",
                 "Declares a function-scoped variable",
-                "List of values( a type of object)",
+                "List of values (a type of object)",
                 "Numbers, no need to distinguish int/float"
             ],
-            correctAnswer: "List of values( a type of object)",
+            correctAnswer: "List of values (a type of object)",
             explanation: `[1,2,3] or ["a","b", "c"]`
         },
         {
@@ -1980,331 +1863,24 @@ const gameData = {
                 "console.log(fruits[0]); Accessing value at index",
                 "Accessing the value usig bracket notation.",
                 "JSON.objectify()",
-                "Code that can be called"
+                "Code that can be called to perform a task." // Improved option
             ],
-            correctAnswer: "Code that can be called",
+            correctAnswer: "Code that can be called to perform a task.",
             explanation: `function sayHi(){alert("Hi");}`
         },
         {
             question: "Date (non-primitive data types)",
             options: [
-                `console.log(person[ "name"]); Bracket notation for object key`,
-                "useful when the key is dynamic (e.g from a variable).",
-                "Decleared, but no value",
-                "built-in object for dates and times"
+                "Represents specific points in time.",
+                "A way to handle asynchronous operations.",
+                "Used for mathematical calculations.",
+                "A collection of related functions."
             ],
-            correctAnswer: "built-in object for dates and times",
-            explanation: "new Date()"
-        },
-        {
-            question: "Primitive Data type",
-            options: [
-                "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
-                "is a collection of data stored as key-values pairs.",
-                "These are the most basic types. They store a single value."
-            ],
-            correctAnswer: "These are the most basic types. They store a single value.",
-            explanation: ""
-        },
-        {
-            question: "String",
-            options: [
-                "A variable is like a container that stores a value. You can use it to store numbers, text, or anything you want.",
-                "JavaScript is a programming language used to make web pages interactive.",
-                "Text, inside quotes.",
-                "While HTML builds the structure (like text, images and buttons), CSS controls how that structure looks: colors, fonts, layout (position of elements), sizes, spacing, and animation."
-            ],
-            correctAnswer: "Text, inside quotes.",
-            explanation: ""
-        },
-        {
-            question: "Number",
-            options: [
-                "I'm creating an array using square brackets.",
-                "Declares a function-scoped variable",
-                "Declares a constant variable",
-                "Numbers, no need to distinguish int/float"
-            ],
-            correctAnswer: "Numbers, no need to distinguish int/float",
-            explanation: ""
-        },
-        {
-            question: "Boolean",
-            options: [
-                "console.log(fruits[0]); Accessing value at index",
-                "Accessing the value usig bracket notation.",
-                "JSON.objectify()",
-                "Yes/no, On/Off, true/false"
-            ],
-            correctAnswer: "Yes/no, On/Off, true/false",
-            explanation: "true, false"
-        },
-        {
-            question: "Undefined",
-            options: [
-                "console.log(person[double quote name]); Bracket notation for object key",
-                "useful when the key is dynamic (e.g from a variable).",
-                "Decleared, but no value",
-                "Refers to the previous object"
-            ],
-            correctAnswer: "Decleared, but no value",
-            explanation: "let x semicolon"
-        },
-        {
-            question: "Null",
-            options: [
-                "Bracket notation (array)",
-                "Intentionally empty",
-                "Bracket notation (object)",
-                "Character"
-            ],
-            correctAnswer: "Intentionally empty",
-            explanation: "let x = null semicolon"
-        },
-        {
-            question: "Symbol",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Unique identifiers (advanced use)"
-            ],
-            correctAnswer: "Unique identifiers (advanced use)",
-            explanation: "Symbol(double quote id)"
-        },
-        {
-            question: "BigInt",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "For very large number (rarely used)"
-            ],
-            correctAnswer: "For very large number (rarely used)",
-            explanation: "123455677788999n"
-        },
-        {
-            question: "what is an object in JavaScript?",
-            options: [
-                "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
-                "is a collection of data stored as key-values pairs.",
-                "Declares a private variable"
-            ],
-            correctAnswer: "is a collection of data stored as key-values pairs.",
-            explanation: ""
-        },
-        {
-            question: "what is an Array in JavaScript?",
-            options: [
-                "A variable is like a container that stores a value. You can use it to store numbers, text, or anything you want.",
-                "JavaScript is a programming language used to make web pages interactive.",
-                "is a special object used to store a list  of values.",
-                "While HTML builds the structure (like text, images and buttons), CSS controls how that structure looks: colors, fonts, layout (position of elements), sizes, spacing, and animation."
-            ],
-            correctAnswer: "is a special object used to store a list  of values.",
-            explanation: ""
-        },
-        {
-            question: "This is an array literal.",
-            options: [
-                "I'm creating an array using square brackets.",
-                "Declares a function-scoped variable",
-                "Declares a constant variable",
-                "Declares a private variable"
-            ],
-            correctAnswer: "I'm creating an array using square brackets.",
-            explanation: "If you write [] alone or assign it to a variable: here,[] is called an array literal-it creates a new array."
-        },
-        {
-            question: "Bracket Notation (for Accessing)",
-            options: [
-                "console.log(fruits[0]); Accessing value at index",
-                "Accessing the value usig bracket notation.",
-                "JSON.objectify()",
-                "JSON.convert()"
-            ],
-            correctAnswer: "Accessing the value usig bracket notation.",
-            explanation: "When you use [] to get or set a value, it's called bracket notation."
-        },
-        {
-            question: "In Object (Dynamic Keys)",
-            options: [
-                "console.log(person[double quote name]); Bracket notation for object key",
-                "useful when the key is dynamic (e.g from a variable).",
-                "Refers to the parent object",
-                "Refers to the previous object"
-            ],
-            correctAnswer: "console.log(person[double quote name]); Bracket notation for object key",
-            explanation: "Useful when the key is dynamic"
-        },
-        {
-            question: "[]",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Character"
-            ],
-            correctAnswer: "Array literal",
-            explanation: ""
-        },
-        {
-            question: "[double quote key]",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Character"
-            ],
-            correctAnswer: "Bracket notation (object)",
-            explanation: ""
-        },
-        {
-            question: "[index]",
-            options: [
-                "Bracket notation (array)",
-                "Array literal",
-                "Bracket notation (object)",
-                "Character"
-            ],
-            correctAnswer: "Bracket notation (array)",
-            explanation: ""
-        },
-        {
-            question: "What is JavaScript",
-            options: [
-                "It's the standard language used to create and structure content on the web.",
-                "avaScript is a programming language used to make web pages interactive.",
-                "It's used to style and design HTML pages.",
-                "Declares a private variable"
-            ],
-            correctAnswer: "JavaScript is a programming language used to make web pages interactive.",
-            explanation: "For example: show pop-up massages , create sliders or animations, Validate forms and control audio/Video. Example (Run in your browser or an online editor like JSFiddle, codePen, or PlayCode."
-        },
-        {
-            question: "What is a Variable?",
-            options: [
-                "A variable is like a container that stores a value. You can use it to store numbers, text, or anything you want.",
-                "JavaScript is a programming language used to make web pages interactive.",
-                "It's used to style and design HTML pages.",
-                "While HTML builds the structure (like text, images and buttons), CSS controls how that structure looks: colors, fonts, layout (position of elements), sizes, spacing, and animation."
-            ],
-            correctAnswer: "A variable is like a container that stores a value. You can use it to store numbers, text, or anything you want.",
-            explanation: "For example: show pop-up messages, create sliders or animations, validate forms, and control audio/video. Example (Run in your browser or an online editor like JSFiddle, CodePen, or PlayCode)."
-        },
-        {
-            question: "What does 'var' keyword do in JavaScript?",
-            options: [
-                "Declares a block-scoped variable",
-                "Declares a function-scoped variable",
-                "Declares a constant variable",
-                "Declares a private variable"
-            ],
-            correctAnswer: "Declares a function-scoped variable",
-            explanation: "'var' declares a variable that is function-scoped or globally scoped if declared outside a function."
-        },
-        {
-            question: "Which method is used to parse a JSON string into a JavaScript object?",
-            options: [
-                "JSON.stringify()",
-                "JSON.parse()",
-                "JSON.objectify()",
-                "JSON.convert()"
-            ],
-            correctAnswer: "JSON.parse()",
-            explanation: "JSON.parse() is used to convert a JSON string into a JavaScript object."
-        },
-        {
-            question: "What is the purpose of the 'this' keyword in JavaScript?",
-            options: [
-                "Refers to the global object",
-                "Refers to the current object",
-                "Refers to the parent object",
-                "Refers to the previous object"
-            ],
-            correctAnswer: "Refers to the current object",
-            explanation: "The 'this' keyword refers to the object it belongs to, depending on the context in which it is used."
-        },
-        {
-            question: "Which of the following is NOT a JavaScript data type?",
-            options: [
-                "String",
-                "Number",
-                "Boolean",
-                "Character"
-            ],
-            correctAnswer: "Character",
-            explanation: "JavaScript does not have a 'Character' data type; single characters are represented as strings."
-        },
-        {
-            question: "What is the output of 'typeof null' in JavaScript?",
-            options: [
-                "'null'",
-                "'object'",
-                "'undefined'",
-                "'string'"
-            ],
-            correctAnswer: "'object'",
-            explanation: "In JavaScript, 'typeof null' returns 'object' due to a historical bug in the language."
-        },
-        {
-            question: "Which function is used to delay the execution of code in JavaScript?",
-            options: [
-                "setTimeout()",
-                "setInterval()",
-                "delay()",
-                "wait()"
-            ],
-            correctAnswer: "setTimeout()",
-            explanation: "setTimeout() is used to execute a function after a specified delay in milliseconds."
-        },
-        {
-            question: "What is the difference between '==' and '===' in JavaScript?",
-            options: [
-                "'==' checks value only, '===' checks value and type",
-                "'==' checks type only, '===' checks value and type",
-                "'==' checks value and type, '===' checks value only",
-                "'==' and '===' are the same"
-            ],
-            correctAnswer: "'==' checks value only, '===' checks value and type",
-            explanation: "'==' performs type coercion, while '===' checks both value and type without coercion."
-        },
-        {
-            question: "Which keyword is used to define a constant in JavaScript?",
-            options: [
-                "let",
-                "var",
-                "const",
-                "static"
-            ],
-            correctAnswer: "const",
-            explanation: "The 'const' keyword is used to declare variables that cannot be reassigned."
-        },
-        {
-            question: "What is the purpose of the 'map()' method in JavaScript?",
-            options: [
-                "Iterates over an array and modifies its elements",
-                "Creates a new array by applying a function to each element",
-                "Filters elements of an array based on a condition",
-                "Sorts the elements of an array"
-            ],
-            correctAnswer: "Creates a new array by applying a function to each element",
-            explanation: "The 'map()' method creates a new array by applying a provided function to each element of the original array."
-        },
-        {
-            question: "What is the output of 'console.log(0.1 + 0.2 === 0.3)'?",
-            options: [
-                "true",
-                "false",
-                "undefined",
-                "NaN"
-            ],
-            correctAnswer: "false",
-            explanation: "Due to floating-point precision issues, 0.1 + 0.2 does not exactly equal 0.3 in JavaScript."
+            correctAnswer: "Represents specific points in time.",
+            explanation: "The `Date` object allows you to work with dates and times in JavaScript, including creating, manipulating, and formatting them."
         }
     ],
+
     // Added Q&A PHP based on user's original data structure.
     qnaphp: [
         {
